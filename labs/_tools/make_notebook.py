@@ -31,21 +31,27 @@ cells = [
 
 الأوقات بالدقائق من بداية الوردية (480 دقيقة). المسافات على الطرق الفعلية، والأزمنة بلا ازدحام.
 """),
-    md("## 1 · التجهيز\nفي Colab تنزّل الخلية أداة الحل (OR-Tools) وملفات المختبر من موقع المقرر. على جهازك تقرأ الملفات من المجلد نفسه."),
+    md("## 1 · التجهيز\nتثبّت الخلية أداة الحل (OR-Tools) إن لم تكن مثبتة، وتقرأ ملفات المختبر من المجلد نفسه إن وُجدت، وإلا نزّلتها من موقع المقرر."),
     code(f"""
 import os, sys, pathlib, subprocess, urllib.request
 
 SITE = "{SITE}"
 FILES = {FILES!r}
+try:
+    import ortools  # noqa: F401
+except ImportError:  # Colab and most fresh environments: install the solver once
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "ortools==9.14.6206"], check=True)
+
 here = pathlib.Path.cwd()
 if not (here / "deliveries_120.csv").exists():
-    if "google.colab" in sys.modules:
-        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "ortools==9.14.6206"], check=True)
     here = pathlib.Path("rakb_routing_files")
     here.mkdir(exist_ok=True)
-    for name in FILES:
-        if not (here / name).exists():
-            urllib.request.urlretrieve(SITE + name, here / name)
+    try:
+        for name in FILES:
+            if not (here / name).exists():
+                urllib.request.urlretrieve(SITE + name, here / name)
+    except Exception as e:
+        raise SystemExit("تعذّر تنزيل ملفات المختبر (" + str(e) + "). ارفع ملفات مجلد routing بجانب الدفتر ثم شغّل الخلية من جديد.")
 sys.path.insert(0, str(here))
 import rakb_routing as R
 case = R.load(here)

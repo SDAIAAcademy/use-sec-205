@@ -68,6 +68,9 @@ def lab_1_2():
     m = int(next(r["mawsim_forecast"] for r in rows if r["date"] == xmas.isoformat()))
     print("   Christmas 2025: actual", y[xmas], "| mawsim", m, "| lag364", y[xmas - dt.timedelta(days=364)], "| same date 2024", y[dt.date(2024, 12, 25)])
     assert (y[xmas], y[dt.date(2024, 12, 25)]) == (5220, 5326)
+    # the days a calendar-blind forecast misses: 26 to 30 November and 22 December to 3 January
+    blind = [d for d in y if dt.date(2025, 11, 26) <= d <= dt.date(2025, 11, 30) or dt.date(2025, 12, 22) <= d <= dt.date(2026, 1, 3)]
+    assert len(blind) == 18, len(blind)
 
 
 def lab_2_1():
