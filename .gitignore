@@ -34,3 +34,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 /*.log
+
+# Output of the routing notebook when it is run inside the repository
+labs/files/routing/my_solver_plan.csv
