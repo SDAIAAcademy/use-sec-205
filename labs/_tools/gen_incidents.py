@@ -1,5 +1,5 @@
 """Incident part of the Rakb file pack: a synthetic year (2025) for 200 vehicles, one row per
-vehicle and month, with kilometres, incidents and whether a Basar camera was fitted."""
+vehicle and month, with kilometres, incidents and whether a Yaqiz camera was fitted."""
 import math
 import random
 

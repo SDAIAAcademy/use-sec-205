@@ -30,7 +30,7 @@
 |---|---|---|---|
 | 1.1 | `D1_1_routing.html` | `routing/routing_lab.ipynb` وملفات `routing/`، و`prework/decision_card.xlsx` | `solutions/check.py 1.1`، `solutions/answer_key.md` |
 | 1.2 | `D1_2_forecast.html` | `forecast/trips_daily.xlsx`، `forecast/mawsim_brochure.txt` | `solutions/check.py 1.2` |
-| 2.1 | `D2_1_incidents.html` | `incidents/fleet_year_2025.xlsx`، `incidents/basar_claim.txt`، `incidents/note_template.txt` | `solutions/check.py 2.1` |
+| 2.1 | `D2_1_incidents.html` | `incidents/fleet_year_2025.xlsx`، `incidents/yaqiz_claim.txt`، `incidents/note_template.txt` | `solutions/check.py 2.1` |
 | 2.2 | `D2_2_claims_and_map.html` | `claims/`، و`map/` | `solutions/check.py 2.2 map` |
 
 ## تشغيل الحلول
