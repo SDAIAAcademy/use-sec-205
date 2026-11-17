@@ -123,7 +123,7 @@ AI in Mobility and Logistics
 ### الأتمتة والتنظيم
 
 - [SAE International: SAE Levels of Driving Automation Refined for Clarity and International Audience (2021), with the J3016 visual chart](https://www.sae.org/news/blog/sae-levels-driving-automation-clarity-refinements)
-- [SAE J3016 (2021): Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles](https://www.sae.org/standards/content/j3016_202104/)
+- [SAE J3016_202609 (September 2026): Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles, standard page and abstract](https://www.sae.org/standards/j3016_202609-taxonomy-definitions-terms-related-driving-automation-systems-road-motor-vehicles)
 - [UK Automated Vehicles Act 2024, section 1: self-driving capability](https://www.legislation.gov.uk/ukpga/2024/10/section/1)
 - [UK Automated Vehicles Act 2024, section 78: restriction of certain terms to authorised automated vehicles](https://www.legislation.gov.uk/ukpga/2024/10/section/78)
 
