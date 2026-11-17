@@ -1,0 +1,521 @@
+{
+  "v": 1,
+  "engine": "1.0.0",
+  "build": {
+    "at": "2026-11-17T20:45:20Z",
+    "version": "2027.1.0",
+    "commit": "3b3a2f2"
+  },
+  "lang": "ar",
+  "dir": "rtl",
+  "totals": {
+    "decks": 3,
+    "slides": 78,
+    "words": 4568,
+    "notes": 77,
+    "notes_ratio": 0.99,
+    "activities": 9,
+    "styles": 12,
+    "slide_minutes": null,
+    "components": {
+      "cards": 60,
+      "pills": 3,
+      "callouts": 34,
+      "tables": 13,
+      "code": 0,
+      "tokens": 0,
+      "flows": 5,
+      "stats": 10,
+      "bars": 3,
+      "meters": 0,
+      "agendas": 3,
+      "quizzes": 9,
+      "checklists": 4,
+      "prompts": 0,
+      "chats": 0,
+      "tools": 0,
+      "traces": 0,
+      "ladders": 0,
+      "figures": 0,
+      "matrices": 0,
+      "timers": 4,
+      "columns": 33,
+      "images": 0,
+      "drawings": 0,
+      "fragments": 10
+    },
+    "minutes": 600
+  },
+  "decks": [
+    {
+      "deck": "day1",
+      "kind": "day",
+      "label": "اليوم 1",
+      "title": "خطة على الطريق وتنبؤ بالموسم",
+      "slides": 35,
+      "words": 2228,
+      "notes": 35,
+      "notes_ratio": 1,
+      "activities": 4,
+      "styles": 3,
+      "slide_minutes": null,
+      "components": {
+        "cards": 25,
+        "pills": 3,
+        "callouts": 15,
+        "tables": 6,
+        "code": 0,
+        "tokens": 0,
+        "flows": 3,
+        "stats": 8,
+        "bars": 1,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 4,
+        "checklists": 2,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 17,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 5
+      },
+      "minutes": 300,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "أداة الحل لا تعرف ما يعرفه المرسِل",
+          "slides": 15,
+          "words": 989,
+          "notes": 15,
+          "notes_ratio": 1,
+          "activities": 2,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 11,
+            "pills": 0,
+            "callouts": 7,
+            "tables": 3,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 5,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 8,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 5
+          },
+          "minutes": 150,
+          "lab_minutes": 75
+        },
+        {
+          "n": 2,
+          "label": "الجلسة 2",
+          "title": "تنبؤ يجب أن يغلب الساذج",
+          "slides": 15,
+          "words": 882,
+          "notes": 15,
+          "notes_ratio": 1,
+          "activities": 2,
+          "styles": 3,
+          "slide_minutes": null,
+          "components": {
+            "cards": 10,
+            "pills": 0,
+            "callouts": 6,
+            "tables": 2,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 3,
+            "bars": 1,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 7,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 150,
+          "lab_minutes": 75
+        }
+      ]
+    },
+    {
+      "deck": "day2",
+      "kind": "day",
+      "label": "اليوم 2",
+      "title": "السلامة بأرقام صادقة، والأتمتة بكلمات دقيقة",
+      "slides": 30,
+      "words": 1854,
+      "notes": 30,
+      "notes_ratio": 1,
+      "activities": 5,
+      "styles": 4,
+      "slide_minutes": null,
+      "components": {
+        "cards": 25,
+        "pills": 0,
+        "callouts": 16,
+        "tables": 5,
+        "code": 0,
+        "tokens": 0,
+        "flows": 2,
+        "stats": 2,
+        "bars": 1,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 5,
+        "checklists": 2,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 13,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 5
+      },
+      "minutes": 300,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "المعدل قبل أي ادعاء سلامة",
+          "slides": 11,
+          "words": 664,
+          "notes": 11,
+          "notes_ratio": 1,
+          "activities": 2,
+          "styles": 4,
+          "slide_minutes": null,
+          "components": {
+            "cards": 5,
+            "pills": 0,
+            "callouts": 6,
+            "tables": 2,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 2,
+            "bars": 1,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 4,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 5
+          },
+          "minutes": 150,
+          "lab_minutes": 75
+        },
+        {
+          "n": 2,
+          "label": "الجلسة 2",
+          "title": "من يقود؟ ثم الخريطة",
+          "slides": 16,
+          "words": 1001,
+          "notes": 16,
+          "notes_ratio": 1,
+          "activities": 2,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 20,
+            "pills": 0,
+            "callouts": 9,
+            "tables": 3,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 0,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 9,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 150,
+          "lab_minutes": 75
+        }
+      ]
+    },
+    {
+      "deck": "capstone",
+      "kind": "capstone",
+      "label": "المناقشة الختامية",
+      "title": "خريطة الفرص والمخاطر أمام لجنة السلامة",
+      "slides": 13,
+      "words": 486,
+      "notes": 12,
+      "notes_ratio": 0.92,
+      "activities": 0,
+      "styles": 5,
+      "slide_minutes": null,
+      "components": {
+        "cards": 10,
+        "pills": 0,
+        "callouts": 3,
+        "tables": 2,
+        "code": 0,
+        "tokens": 0,
+        "flows": 0,
+        "stats": 0,
+        "bars": 1,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 0,
+        "checklists": 0,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 4,
+        "columns": 3,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": null,
+      "sessions": []
+    }
+  ],
+  "coverage": [
+    {
+      "id": "LO1",
+      "text": "يصف مستويات أتمتة القيادة وما يعنيه كل ادعاء بالنسبة إلى السائق ونطاق التشغيل، استنادًا إلى ثمانية ادعاءات من الموردين والصحافة",
+      "level": "Awareness",
+      "slides": [
+        "day2#who-drives",
+        "day2#six-levels",
+        "day2#odd",
+        "day2#takeover-vs-stop",
+        "day2#check-hands-off",
+        "day2#names-are-not-levels",
+        "day2#incident-reporting"
+      ],
+      "activities": [
+        "day2#check-hands-off-q1"
+      ],
+      "sessions": [
+        "day2/2"
+      ],
+      "labs": [
+        "2.2"
+      ],
+      "questions": [
+        "q-auto-01",
+        "q-auto-02",
+        "q-auto-03",
+        "q-auto-04"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO2",
+      "text": "يهيئ تشغيلًا لتخطيط المسارات يراعي النوافذ الزمنية والسعات، ويقارنه بخطة يدوية، على 120 عملية توصيل اصطناعية فوق بيانات خرائط مفتوحة",
+      "level": "Applied",
+      "slides": [
+        "day1#optimise-vs-predict",
+        "day1#vrp-in-one-slide",
+        "day1#open-map-data",
+        "day1#what-the-model-knows",
+        "day1#check-solver-says-zero",
+        "day1#replay-not-trust",
+        "day1#manual-plan-is-data",
+        "day1#constraint-owner",
+        "day1#check-missing-rule",
+        "day1#four-rules",
+        "day1#what-it-costs",
+        "day2#review-day1"
+      ],
+      "activities": [
+        "day1#check-solver-says-zero-q1",
+        "day1#check-missing-rule-q1",
+        "day2#review-day1-q1"
+      ],
+      "sessions": [
+        "day1/1"
+      ],
+      "labs": [
+        "1.1"
+      ],
+      "questions": [
+        "q-route-01",
+        "q-route-02",
+        "q-route-03",
+        "q-route-04"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO3",
+      "text": "يختبر تنبؤًا بالطلب مقابل خطوط الأساس الموسمية الساذجة خلال فترة عطلة، باستخدام سجلات رحلات عامة وتنبؤ جاهز",
+      "level": "Applied",
+      "slides": [
+        "day1#what-we-forecast",
+        "day1#naive-baselines",
+        "day1#public-trip-records",
+        "day1#vendor-headline",
+        "day1#mae-and-mape",
+        "day1#check-error-period",
+        "day1#hijri-holidays",
+        "day1#trust-rule",
+        "day1#check-trust-rule",
+        "day1#holiday-errors",
+        "day1#calendar-blind",
+        "day2#review-day1"
+      ],
+      "activities": [
+        "day1#check-error-period-q1",
+        "day1#check-trust-rule-q1",
+        "day2#review-day1-q1"
+      ],
+      "sessions": [
+        "day1/2"
+      ],
+      "labs": [
+        "1.2"
+      ],
+      "questions": [
+        "q-fcst-01",
+        "q-fcst-02",
+        "q-fcst-03",
+        "q-fcst-04"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO4",
+      "text": "يحلل حوادث الأسطول بمعدلات معدلة بحسب التعرض مع فحص للارتداد نحو المتوسط، على سنة اصطناعية لأسطول من 200 مركبة",
+      "level": "Applied",
+      "slides": [
+        "day2#telematics",
+        "day2#rate-formula",
+        "day2#check-rate",
+        "day2#before-after-trap",
+        "day2#hotspots",
+        "day2#worker-data",
+        "day2#check-retention",
+        "day2#counts-mislead",
+        "day2#comparison-group"
+      ],
+      "activities": [
+        "day2#check-rate-q1",
+        "day2#check-retention-q1"
+      ],
+      "sessions": [
+        "day2/1"
+      ],
+      "labs": [
+        "2.1"
+      ],
+      "questions": [
+        "q-inc-01",
+        "q-inc-02",
+        "q-inc-03",
+        "q-inc-04"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO5",
+      "text": "يبني خريطة للفرص والمخاطر ترتب حالات استخدام التنقل بحسب القيمة وجاهزية البيانات وأثر السلامة ومستوى المخاطر، في المشغل الافتراضي ذي البيانات الاصطناعية",
+      "level": "Performance",
+      "slides": [
+        "day1#uses-in-mobility",
+        "day1#prework-decisions",
+        "day1#constraint-owner",
+        "day1#trust-rule",
+        "day2#worker-data",
+        "day2#incident-reporting",
+        "day2#map-dimensions",
+        "day2#national-matrix",
+        "day2#pilot-sheet",
+        "day2#check-risk-tier",
+        "day2#capstone-kickoff"
+      ],
+      "activities": [
+        "day2#check-risk-tier-q1"
+      ],
+      "sessions": [
+        "day1/1",
+        "day1/2",
+        "day2/1",
+        "day2/2"
+      ],
+      "labs": [
+        "1.1",
+        "1.2",
+        "2.1",
+        "2.2"
+      ],
+      "questions": [
+        "q-map-01",
+        "q-map-02",
+        "q-map-03"
+      ],
+      "covered": true
+    }
+  ]
+}

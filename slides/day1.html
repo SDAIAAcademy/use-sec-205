@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="deck" data-track="fluency">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اليوم 1 · خطة على الطريق وتنبؤ بالموسم · الذكاء الاصطناعي في التنقل والخدمات اللوجستية</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="day1.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<div class="deck" data-course="الذكاء الاصطناعي في التنقل والخدمات اللوجستية" data-track="fluency" data-day="اليوم 1">
+<section class="slide title" id="title" data-auto="title" data-label="الترحيب" data-n="1">
+  <div class="kicker">أكاديمية سدايا · الذكاء الاصطناعي في التنقل والخدمات اللوجستية</div>
+  <h1>خطة على الطريق وتنبؤ بالموسم</h1>
+  <p class="lead mt">اليوم 1: تقارن خطة أداة الحل بخطة المرسِل بقواعده هو، ثم تختبر تنبؤًا بالطلب في العطلات مقابل خطوط أساس ساذجة</p>
+  <div class="meta"><span class="track">مسار الطلاقة في البيانات والذكاء الاصطناعي</span><span>يومان تدريبيان + يوم للمشروع الختامي</span><span>جلستان · مختبران</span><span>USE-SEC-205</span></div>
+  <aside class="notes"><p>رحّب بالمشاركين وعرّف بنفسك. سؤال برفع اليد يضبط الإيقاع: من وقّع على شراء أداة تخطيط أو تنبؤ أو مراقبة في النقل، أو أوصى بها؟ من سأل مورِّدًا: مقابل ماذا قستم هذا الرقم؟ من رأى رقم سلامة لم يُذكر معه عدد الكيلومترات؟</p><p>اليوم جلستان طويلتان: في كل منهما نحو 75 دقيقة من المفاهيم بثلاث كتل، ثم مختبر مدته 75 دقيقة. الاستراحات بزر B، وليست شرائح.</p></aside>
+</section>
+
+<section class="slide" id="agenda" data-auto="agenda" data-label="جدول اليوم" data-n="2">
+  <div class="kicker">اليوم</div>
+  <h2>خطة على الطريق وتنبؤ بالموسم</h2>
+  <div class="agenda"><div class="item"><div><b>الجلسة 1 · أداة الحل لا تعرف ما يعرفه المرسِل</b><small>استخدامات الذكاء الاصطناعي في النقل، والتحسين مقابل التنبؤ، ومسألة تخطيط مسارات المركبات بسعاتها ونوافذها، والقيود التي لا تصل إلى النموذج، والمقارنة العادلة بين خطتين</small></div></div><div class="item"><div><b>الجلسة 2 · تنبؤ يجب أن يغلب الساذج</b><small>التنبؤ بالرحلات والطرود، وخطوط الأساس الساذجة والموسمية، ومقاييس الخطأ وفتراتها، والتقويم والمناسبات في التنبؤ، والعطل الهجرية المتنقلة، وقاعدة الثقة</small></div></div></div>
+  <aside class="notes"><p>جلستان اليوم: أداة الحل مقابل خطة المرسِل صباحًا، ثم تنبؤ بالطلب في العطلات. غدًا: معدلات الحوادث، ثم مستويات الأتمتة والخريطة.</p></aside>
+</section>
+
+<section class="slide" id="course-at-a-glance" data-label="المقرر" data-n="3">
+  <div class="kicker">المقرر في لمحة</div>
+  <h2>يومان من المختبرات، ثم خريطة تدافع عنها</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>اليوم 1 · خطة وتنبؤ</h4><p class="small">أداة الحل مقابل المرسِل، ثم تنبؤ بالطلب مقابل خطوط أساس ساذجة.</p><span class="pill c-teal">جدول المقارنة وقاعدة الثقة</span></div>
+    <div class="card c-coral"><h4>اليوم 2 · سلامة وأتمتة</h4><p class="small">معدلات الحوادث لكل مليون كيلومتر، ثم ثمانية ادعاءات على مستويات الأتمتة.</p><span class="pill c-coral">مذكرة اللجنة وجدول الادعاءات</span></div>
+    <div class="card c-purple"><h4>المناقشة الختامية</h4><p class="small">فحص فردي دون ذكاء اصطناعي، ثم خريطتك أمام لجنة سلامة في جلسة محاكاة.</p><span class="pill c-purple">الخريطة ومشروع تجريبي واحد</span></div>
+  </div>
+  <div class="callout tip mt"><b>الخريطة تبدأ اليوم.</b> آخر خطوة في كل مختبر تضيف سطرًا إليها، فتصل إلى المناقشة الختامية بأربعة أسطر جاهزة.</div>
+  <aside class="notes"><p>المقرر لمن يخطط الشبكات ويدير الأساطيل ويُسأل عن السلامة المرورية، لا لمن يبني النماذج. نفترض ما تعلّموه في <span class="en">USE-FLU-103</span>: المعدل الأساسي، وتغيّر البيانات، ومساءلة ادعاء المورِّد. ملفات السلامة الهندسية للمركبات الذاتية (حالة السلامة، وقياس زمن التولي) في <span class="en">DEV-PHY-401</span>، لا هنا.</p></aside>
+</section>
+
+<section class="slide" id="rakb-logistics" data-label="الحالة الدراسية" data-n="4">
+  <div class="kicker">حالة دراسية واحدة طوال المقرر</div>
+  <h2>شركة رَكْب: 200 مركبة تسلّم الطرود والبقالة في الرياض</h2>
+  <div class="cols cols-21">
+    <div class="stack">
+      <p class="lead">شركة افتراضية، لها أربعة مستودعات، ولجنة سلامتها تنظر في أربعة عروض.</p>
+      <div class="flow">
+        <div class="step c-teal"><b>أداة حل</b>تخطط المسارات</div>
+        <div class="arrow">←</div>
+        <div class="step c-cyan"><b>«موسم»</b>يتنبأ بالطلب</div>
+        <div class="arrow">←</div>
+        <div class="step c-coral"><b>«يَقِظ»</b>كاميرا تراقب السائق</div>
+        <div class="arrow">←</div>
+        <div class="step c-purple"><b>مركبات ذاتية</b>في الساحة والأحياء</div>
+      </div>
+    </div>
+    <div class="card c-navy flat"><h4>من في القاعة معك</h4><p class="small mb0">ضحى الخنيني، تخطيط الشبكة. مازن الشعيل، عمليات الأسطول. أروى الزامل، قائدة السلامة ورئيسة اللجنة. عايد قطب، مشرف الإرسال. نوف المحروس، حماية البيانات. حمدان الصقري، ممثل السائقين.</p></div>
+  </div>
+  <aside class="notes"><p>كل الأسماء والجهات افتراضية. البيانات: الطلبات والأسطول والحوادث اصطناعية ومولَّدة ببذرة ثابتة؛ المسافات من طرق حقيقية في OpenStreetMap؛ سجلات الرحلات في الجلسة الثانية عامة من مدينة شيكاغو. اسأل: من منكم يجلس في مقعد أحد هؤلاء الستة في جهته؟</p></aside>
+</section>
+
+<section class="slide" id="ai-policy" data-label="سياسة الذكاء الاصطناعي" data-n="5">
+  <div class="kicker">كيف نستخدم الذكاء الاصطناعي هنا</div>
+  <h2>ثلاث قواعد، بحسب ما يقيسه كل نشاط</h2>
+  <table class="t">
+    <tr><th>النشاط</th><th>القاعدة</th><th>لماذا</th></tr>
+    <tr><td>الفحص الفردي، ووضع الادعاءات على المستويات في المختبر 2.2</td><td><b>دون ذكاء اصطناعي</b></td><td>قراءة الادعاء والحكم فيه مهارتك أنت</td></tr>
+    <tr><td>المختبرات 1.1 و1.2 و2.1</td><td><b>مساعد بدور المعلّم</b></td><td>يشرح خلية أو معادلة، والمقارنة والحكم لك</td></tr>
+    <tr><td>الخريطة</td><td><b>مسموح كاملًا</b></td><td>تدافع عنها حيًّا، وتعيد تقييم حالة تختارها اللجنة</td></tr>
+  </table>
+  <div class="callout warn mt"><b>لا بيانات حقيقية من جهتك في أي مساعد عام.</b> لا مواقع سائقين ولا عملاء ولا لوحات. ملفات المقرر اصطناعية أو عامة، وتكفي لكل خطوة.</div>
+  <aside class="notes"><p>هذه السياسة من وصف المقرر، لا من اختيار المدرب. قلها بوضوح الآن، وكررها قبل المختبر 2.2.</p></aside>
+</section>
+
+<!-- الجلسة 1 -->
+
+<section class="slide section" id="s1" data-auto="section" data-session="1" data-n="6">
+  <div class="kicker">الجلسة 1</div>
+  <h1>أداة الحل لا تعرف ما يعرفه المرسِل</h1>
+  <ul class="bullets outcomes"><li>يفرّق بين أداة تحسين تختار خطة وأداة تنبؤ تقدّر رقمًا</li><li>يهيئ تشغيلًا لأداة حل بالسعات والنوافذ الزمنية ويقرأ ما تقوله عن نفسها</li><li>يقارن خطتين بالقواعد نفسها ويسمّي القيود التي أغفلتها الأداة</li></ul>
+  <div class="sess-no">01</div>
+  <aside class="notes"><p>الجلسة الأولى: نحو 75 دقيقة من المفاهيم بثلاث كتل (أين الذكاء الاصطناعي في النقل، ما تفعله أداة الحل، ما لا تعرفه)، ثم المختبر 1.1.</p></aside>
+</section>
+
+<section class="slide" id="uses-in-mobility" data-lo="LO5" data-n="7" data-session="1">
+  <div class="kicker">أين يعمل الذكاء الاصطناعي في النقل</div>
+  <h2>أربعة استخدامات، ولكل منها سؤال مختلف</h2>
+  <div class="cols cols-4 gap-s">
+    <div class="card c-teal"><h4>التخطيط والإرسال</h4><p class="small mb0">من يأخذ أي طلب، وبأي ترتيب. السؤال: <b>هل تعرف الأداة قواعدنا؟</b></p></div>
+    <div class="card c-cyan"><h4>التنبؤ بالرحلات والطرود</h4><p class="small mb0">كم طلبًا غدًا، وفي الموسم. السؤال: <b>هل يغلب الساذج؟</b></p></div>
+    <div class="card c-coral"><h4>المعلوماتية عن بعد ومراقبة السائق</h4><p class="small mb0">سرعة وكبح وانتباه. السؤال: <b>لكل كم كيلومتر؟ وما الذي يُجمع عن الإنسان؟</b></p></div>
+    <div class="card c-purple"><h4>إدارة المرور والنقاط الساخنة</h4><p class="small mb0">أين تقع الحوادث. السؤال: <b>أخطر، أم أكثر مرورًا؟</b></p></div>
+  </div>
+  <aside class="notes"><p>اربط كل استخدام بمختبر: التخطيط الآن، والتنبؤ بعد الظهر، والمعلوماتية والنقاط الساخنة صباح الغد، والأتمتة بعد ظهر الغد. لا يلزم أن يعرف أحد كيف يعمل النموذج من الداخل: الأسئلة الأربعة أسئلة مدير.</p></aside>
+</section>
+
+<section class="slide" id="prework-decisions" data-lo="LO5" data-n="8" data-session="1">
+  <div class="kicker">ماذا وجدتم في بطاقاتكم</div>
+  <h2>كل قرار تخطيط فيه قيد لا يظهر في أي ملف</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>سائق لا يدخل حيًّا معينًا</li>
+      <li>رصيف تحميل يُغلق في جزء من اليوم</li>
+      <li>عميل لا يستلم إلا من شخص يعرفه</li>
+      <li>شاحنة لا تصلح لنوع من البضاعة</li>
+    </ul>
+    <div class="card c-navy flat"><h4>سؤال من البطاقة</h4><p class="small mb0">ما القيد الذي يعرفه صاحب القرار ولا يظهر في أي ملف؟ هذا السؤال هو المختبر 1.1 كله.</p></div>
+  </div>
+  <aside class="notes"><p>افتح البطاقات التي سلّموها قبل الورشة (العمل التحضيري، نحو ساعة). اقرأ ثلاث إجابات عن السؤال الرابع دون أسماء جهاتهم. من لم يسلّم بطاقته يختار قرارًا من ملف رَكْب التعريفي ويكمل بطاقته مساءً.</p></aside>
+</section>
+
+<section class="slide" id="optimise-vs-predict" data-lo="LO2" data-n="9" data-session="1">
+  <div class="kicker">نوعان من الأدوات</div>
+  <h2>أداة تختار خطة، وأداة تقدّر رقمًا</h2>
+  <table class="t">
+    <tr><th></th><th>التحسين (optimisation)</th><th>التنبؤ (prediction)</th></tr>
+    <tr><td>ما تخرجه</td><td>خطة: من يذهب إلى أين وبأي ترتيب</td><td>رقم: كم طلبًا غدًا، وكم دقيقة للوصول</td></tr>
+    <tr><td>ما تحتاجه</td><td><b>هدف وقيود</b> مكتوبة</td><td><b>بيانات ماضية</b> تشبه المستقبل</td></tr>
+    <tr><td>كيف تخطئ</td><td>تلتزم بقيود ناقصة التزامًا تامًا</td><td>تكرر الماضي حين يتغير</td></tr>
+    <tr class="hl"><td>ما تسأله</td><td>هل تعرف قواعدنا؟</td><td>هل تغلب خطًا ساذجًا؟</td></tr>
+  </table>
+  <aside class="notes"><p>كثير من العروض تمزج الاثنين: تنبؤ بالطلب يغذي أداة تخطيط. لكن الخطأين مختلفان: أداة الحل لا تتعلم من البيانات، بل تبحث عن أفضل خطة بالقواعد التي أعطيناها. إن نقصت القواعد، جاءت الخطة «مثالية» لعالم غير عالمنا.</p></aside>
+</section>
+
+<section class="slide" id="vrp-in-one-slide" data-lo="LO2" data-n="10" data-session="1">
+  <div class="kicker">مسألة تخطيط مسارات المركبات</div>
+  <h2>المسألة: مستودع، وطلبات، وشاحنات، وقيود</h2>
+  <div class="cols cols-2 mid">
+    <ul class="bullets">
+      <li><b>المدخلات:</b> مواقع الطلبات، والمسافة والزمن بين كل نقطتين</li>
+      <li><b>السعة:</b> صناديق كل شاحنة</li>
+      <li><b>النوافذ الزمنية:</b> متى يُقبل التسليم</li>
+      <li><b>زمن الخدمة:</b> دقائق التوقف عند كل طلب</li>
+      <li><b>الهدف:</b> أقصر مسافة، أو أقل شاحنات</li>
+    </ul>
+    <div class="card c-teal"><h4>في رَكْب</h4><p class="small mb0">120 طلبًا، وثماني شاحنات سعة كل منها 40 صندوقًا، ووردية من 480 دقيقة. المسافات من طرق الرياض في OpenStreetMap.</p></div>
+  </div>
+  <aside class="notes"><p>اسم المسألة بالإنجليزية <span class="en">Vehicle Routing Problem with Time Windows</span>. أدوات الحل المفتوحة تحلها: <span class="en">OR-Tools</span> من Google و<span class="en">VROOM</span> مثالان قابلان للتبديل. لا تشرح الخوارزمية: الأداة تجرب ترتيبات كثيرة وتحتفظ بالأفضل وفق الهدف.</p><p>المصادر: Google OR-Tools، Vehicle Routing Problem with Time Windows.</p></aside>
+</section>
+
+<section class="slide" id="open-map-data" data-lo="LO2" data-n="11" data-session="1">
+  <div class="kicker">من أين تأتي المسافات</div>
+  <h2>الخريطة المفتوحة تعطي مسافة الطريق، لا خط الطيران</h2>
+  <div class="cols cols-3">
+    <div class="stat center"><div class="big">121 × 121</div><div class="lbl">مسافة وزمنًا بين المستودع وكل طلب</div></div>
+    <div class="stat center"><div class="big">11.1 كم</div><div class="lbl">متوسط المسافة على الطرق بين نقطتين</div></div>
+    <div class="stat center"><div class="big">12 دقيقة</div><div class="lbl">متوسط زمن القيادة بينهما، بلا ازدحام</div></div>
+  </div>
+  <div class="callout warn mt"><b>الزمن بلا ازدحام.</b> الخريطة لا تعرف ساعة الذروة. هذا قيد آخر يعرفه المرسِل ولا يعرفه الملف.</div>
+  <div class="caption">بيانات الخريطة © مساهمو OpenStreetMap، برخصة ODbL؛ الجدولان محسوبان عبر OSRM. مواقع الطلبات اصطناعية.</div>
+  <aside class="notes"><p>حسبنا الجدولين مرة واحدة من خادم <span class="en">OSRM</span> العام على بيانات <span class="en">OpenStreetMap</span>، ونشرناهما مع المختبر بشروط رخصة <span class="en">ODbL</span>. المختبر لا يتصل بالخادم. المتوسطان من الجدولين في <code>distance_m.csv</code> و<code>duration_s.csv</code>.</p><p>المصادر: OpenStreetMap copyright and licence؛ Project OSRM.</p></aside>
+</section>
+
+<section class="slide" id="what-the-model-knows" data-lo="LO2" data-n="12" data-session="1">
+  <div class="kicker">ما يعرفه النموذج</div>
+  <h2>أداة الحل تعرف ما كُتب لها فقط</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>1 · ما في الملف</b>المواقع والصناديق والنوافذ</div>
+    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · ما في النموذج</b>السعة والنوافذ و5 دقائق لكل تسليم</div>
+    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · ما في رأس المرسِل</b>قواعد في ملاحظاته لم تُكتب للأداة</div>
+  </div>
+  <div class="callout tip mt frag"><b>الفجوة بين 2 و3</b> هي ما تبحث عنه في المختبر. أحيانًا تكون المعلومة في الملف، ولم يطلب أحد من النموذج أن يقرأها.</div>
+  <aside class="notes"><p>اضغط مرة لكل خطوة. في الخطوة 3 لا تعدّد القواعد هنا: اثنتان منها في شريحة «خطة عايد»، والراحة في نقطة التحقق، والرابعة (وقت الأبراج) يجدونها بأنفسهم في ملاحظات عايد وفي الملف. تُجمع كلها في شريحة «القواعد الأربع» بعد المختبر. ملف الطلبات فيه أعمدة <span class="en">cold</span> و<span class="en">lift</span> و<span class="en">tower</span>، والنموذج الأول لا يقرؤها.</p></aside>
+</section>
+
+<section class="slide" id="check-solver-says-zero" data-lo="LO2" data-n="13" data-session="1">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>الأداة تقول: صفر تأخر</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="check-solver-says-zero-q1">
+    <p class="lead">أداة حل تقترح خطة أقصر بكثير من خطة المرسِل، وتقول إن كل الطلبات في نوافذها. ما أول ما تفعله قبل أن تعتمدها؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يثق برقم الأداة عن نفسها: الصفر صحيح بالقواعد التي أُعطيت لها فقط" data-k="أ">تعتمدها، فالأداة تحسب أدق من الإنسان</div>
+      <div class="opt" data-why="يقارن نتيجتين بقواعد مختلفة: رقم المرسِل بقواعده ورقم الأداة بقواعدها" data-k="ب">تقارن الكيلومترات بخطة المرسِل وتختار الأقصر</div>
+      <div class="opt" data-ok data-k="ج">تعيد قيادة الخطتين بقواعد المرسِل ثم تقارن</div>
+      <div class="opt" data-why="يظن أن التجربة الميدانية أول خطوة: يُكتشف الخطأ فيها على حساب البضاعة والسائقين" data-k="د">تجربها يومًا كاملًا في مستودع واحد ثم تقرر</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> الأداة صادقة بالقواعد التي أُعطيت لها. المقارنة العادلة تحكم على الخطتين بالقواعد نفسها، قبل أن يدفع أحد ثمن قاعدة ناقصة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. لا تذكر نسبة الوفر: يقيسها المشاركون في الخطوة 3 من المختبر (للمدرّب: 357.2 كم مقابل 565.0 كم، أي 37%). ولا تكشف ما يحدث بعد إعادة القيادة. إن اختار كثيرون «د» فقل: التجربة الميدانية مهمة، لكنها بعد الفحص المكتبي لا بدلًا منه.</p></aside>
+</section>
+
+<section class="slide" id="replay-not-trust" data-lo="LO2" data-n="14" data-session="1">
+  <div class="kicker">المقارنة العادلة</div>
+  <h2>أعد قيادة كل خطة بالقواعد نفسها</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal flat"><h4>إعادة القيادة (replay)</h4><p class="small mb0">كل شاحنة تخرج في الدقيقة 0، وتسير بأزمنة الخريطة، وتنتظر إن وصلت مبكرًا، وتأخذ راحتها، وتعود. نحسب ما يحدث فعلًا.</p></div>
+    <div class="card c-coral flat"><h4>ما نعدّه</h4><p class="small mb0">الكيلومترات، والطلبات المتأخرة ودقائقها، والشاحنات التي تعود بعد الوردية، وكل طلب في شاحنة لا تصلح له.</p></div>
+  </div>
+  <div class="callout note mt"><b>هذا ما يطلبه ناتج التعلم الثاني:</b> مقارنة المسافة والتأخر تسمّي القيود التي أغفلتها الأداة.</div>
+  <aside class="notes"><p>في الدفتر الدالة <code>replay</code> تفعل ذلك. نشغّلها على خطة عايد وعلى خطة الأداة. المشاركون لا يكتبون كودًا: يشغّلون الخلايا ويقرؤون.</p></aside>
+</section>
+
+<section class="slide" id="manual-plan-is-data" data-lo="LO2" data-n="15" data-session="1">
+  <div class="kicker">خطة عايد</div>
+  <h2>الخطة اليدوية ليست خطأ: هي سجلّ قواعد غير مكتوبة</h2>
+  <div class="cols cols-2 mid">
+    <div class="stack">
+      <div class="stat center"><div class="big">؟</div><div class="lbl">كيلومترات خطة عايد بقواعده: تقيسها في المختبر</div></div>
+      <div class="stat center"><div class="big">أطول</div><div class="lbl">من خطة الأداة، ويحترم التبريد والمساعد</div></div>
+    </div>
+    <ul class="bullets">
+      <li>لا بقالة مبرّدة في شاحنة عادية</li>
+      <li>لا أثاث مع سائق وحده</li>
+      <li>لا يعرف أقصر طريق، ويعرف من يغضب</li>
+    </ul>
+  </div>
+  <aside class="notes"><p>لا تعطِ الأرقام هنا: يقيسها المشاركون في الخطوة 2 من المختبر (للمدرّب: 565.0 كم، و3 طلبات متأخرة، و84 دقيقة تأخرًا). لا تجعل عايد خصمًا: هو مصدر القواعد. المديرون في القاعة يعرفون مرسِلًا مثله. الخطة اليدوية أطول لأنه يقسّم بالاتجاه ويرتب بالنوافذ.</p></aside>
+</section>
+
+<section class="slide" id="constraint-owner" data-lo="LO2 LO5" data-n="16" data-session="1">
+  <div class="kicker">من يملك القيود</div>
+  <h2>قبل التشغيل: سجلّ قيود له مالك</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>اكتبها</h4><p class="small mb0">كل قاعدة في رأس المرسِل تصير سطرًا: ما هي، ولماذا، وكم طلبًا تمس.</p></div>
+    <div class="card c-cyan"><h4>اختبرها</h4><p class="small mb0">أعد قيادة خطة الأداة بها كل أسبوع، لا مرة واحدة عند الشراء.</p></div>
+    <div class="card c-coral"><h4>اسمِّ مالكها</h4><p class="small mb0">المرسِل يراجع الخطة قبل خروج الشاحنات، ويستطيع أن يردّها.</p></div>
+  </div>
+  <div class="callout note mt"><b>هذا دور التولي في التخطيط:</b> من يرى الخطة قبل أن تقع، ويستطيع إيقافها.</div>
+  <aside class="notes"><p>هذا ما يدخل الخريطة في سطر الحالة U01: دور التولي هو المرسِل الذي يراجع الخطة. أثر السلامة غير مباشر: الخطة تحدد الحمل والإيقاع المطلوب من السائق. مبدأ المساءلة والمسؤولية في مبادئ أخلاقيات الذكاء الاصطناعي يحمّل المسؤولية للمصممين والموردين والمشترين والمطورين والمالكين معًا، ويطلب أن يكون من ينفّذ النظام معروفًا، وأن يظهر الإشراف البشري في دورة حياة النظام كلها. فشراء الأداة من مورِّد لا يعفي رَكْب: تسمية مالك للقيود جزء من مسؤوليتها.</p><p>المصادر: سدايا، مبادئ أخلاقيات الذكاء الاصطناعي.</p></aside>
+</section>
+
+<section class="slide" id="check-missing-rule" data-lo="LO2" data-n="17" data-session="1">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>قاعدة غير موجودة في النموذج</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="check-missing-rule-q1">
+    <p class="lead">بعد إضافة ثلاث قواعد، بقي طلب واحد متأخرًا بسبب راحة السائق، وهذه النسخة من الأداة لا تعرف الراحة. ما الأنسب؟</p>
+    <div class="opts">
+      <div class="opt" data-ok data-k="أ">تبقي الراحة على المرسِل وتطلب أداة تدعمها</div>
+      <div class="opt" data-why="يضحي بقاعدة عن الإنسان لأن النموذج لا يعرفها: الراحة حق السائق وشرط سلامة" data-k="ب">تلغي الراحة في الأيام المزدحمة لتطابق الخطة</div>
+      <div class="opt" data-why="يرى في تأخر واحد سببًا لرفض الأداة كلها، مع أن وفر المسافة حقيقي بعد القواعد" data-k="ج">ترفض الأداة وتعود إلى الخطة اليدوية كاملة</div>
+      <div class="opt" data-why="يخلط بين القاعدة والهدف: إطالة النوافذ تخفي التأخر ولا تمنحه راحة" data-k="د">تطيل نوافذ التسليم حتى يختفي التأخر من التقرير</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> القاعدة التي لا يعرفها النموذج تبقى على إنسان يراجع الخطة، ويُطلب من الأداة أن تعرفها قبل أن تكبر التجربة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: أ. أدوات حل كثيرة تدعم فترات الراحة (VROOM مثلًا)، لكن لا تذكر قدرة أداة بعينها دون أن تفتح صفحتها. إن اختار أحد «ب» فقل: هذا ما يحدث حين يصير النموذج هو القاعدة.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-1-1" data-auto="lab" data-lab="1.1" data-label="المختبر 1.1" data-n="18" data-session="1">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 1.1 · 75 دقيقة</div><h2>أداة الحل مقابل خطة المرسِل</h2><p class="lead small">تشغّل أداة حل لتخطيط المسارات في دفتر جاهز على 120 طلبًا اصطناعيًا فوق طرق <span class="ltr" dir="ltr">OpenStreetMap</span>، وتعيد قيادة خطتها وخطة المرسِل اليدوية بقواعده الأربع، وتسمّي القيود التي أغفلتها، ثم تضيفها وتقارن</p><a class="nb" href="../labs/D1_1_routing.html">D1_1_routing.html</a></div><ul class="checklist"><li>راجع بطاقة قرارك التحضيرية مع زميل <span class="min">8 د</span></li><li>اقرأ ملاحظات المرسِل وأعد قيادة خطته اليدوية <span class="min">10 د</span></li><li>شغّل أداة الحل أول مرة واقرأ ما تقوله عن خطتها <span class="min">7 د</span></li><li>أعد قيادة خطة الأداة بقواعد المرسِل وسمِّ القيود التي أغفلتها <span class="min">20 د</span></li><li>أعطِ الأداة ما يمكن إعطاؤه من القواعد وقارن الخطط الثلاث <span class="min">15 د</span></li><li>اكتب المقارنة وأضف سطر التخطيط إلى خريطتك <span class="min">15 د</span></li><li class="stretch">✱ إضافي: جرّب سبع شاحنات بدل ثماني، وقل لمدير الأسطول أي شاحنة يمكن الاستغناء عنها ولماذا</li></ul></div>
+  <aside class="notes"><p>المساعد بدور المعلّم فقط. أعطهم دقيقة لفتح الدفتر في Colab: الخلية 1 تنزّل الأداة والملفات (بعد نشر موقع المقرر). إن تعذّر، ارفع ملفات مجلد routing إلى Colab بجانب الدفتر، أو اعرض الدفتر من جهازك ودعهم يعملون من solver_plan_reference.csv. راقب من ينقل رقم الأداة عن نفسها (صفر تأخر) إلى جدول المقارنة: أعده إلى الخلية 4. لا تكشف القواعد الأربع قبل الخطوة 4.</p></aside>
+</section>
+
+<section class="slide" id="four-rules" data-lo="LO2" data-n="19" data-session="1">
+  <div class="kicker">مراجعة المختبر 1.1</div>
+  <h2>أربع قواعد في ملاحظات المرسِل</h2>
+  <table class="t">
+    <tr><th>القاعدة</th><th>كم تمس</th><th>من أين يعرفها النموذج؟</th></tr>
+    <tr><td>البقالة المبرّدة على الشاحنة المبرّدة V8 فقط</td><td>14 طلبًا</td><td>عمود في الملف، لم يُقرأ</td></tr>
+    <tr><td>الأثاث على V2، حيث المساعد</td><td>6 طلبات</td><td>عمود في الملف، لم يُقرأ</td></tr>
+    <tr><td>الأبراج: 15 دقيقة لا 5</td><td>18 طلبًا</td><td>في رأس المرسِل</td></tr>
+    <tr><td>راحة 30 دقيقة تبدأ بين الدقيقتين 210 و270</td><td>كل سائق</td><td>في رأس المرسِل</td></tr>
+  </table>
+  <aside class="notes"><p>مراجعة المختبر 1.1: اطلب من القاعة القواعد قبل أن تعرض الجدول. الرابعة قاعدة عن السائق لا عن الطلب: الصلاة والطعام. هي التي يسهل نسيانها في أي نموذج.</p></aside>
+</section>
+
+<section class="slide" id="what-it-costs" data-lo="LO2" data-n="20" data-session="1">
+  <div class="kicker">مراجعة المختبر 1.1 · ثمن القاعدة الناقصة</div>
+  <h2>أقصر بـ 37%، و20 طلبًا في الشاحنة الخطأ</h2>
+  <table class="t">
+    <tr><th>بقواعد المرسِل الأربع</th><th>خطة عايد</th><th>الأداة: التشغيل الأول</th><th>الأداة: بعد ثلاث قواعد</th></tr>
+    <tr><td>الكيلومترات</td><td>565.0</td><td>357.2</td><td>450.5</td></tr>
+    <tr><td>طلبات متأخرة (دقائق)</td><td>3 (84)</td><td>4 (23)</td><td>1 (14)</td></tr>
+    <tr><td>مبرّد في شاحنة عادية</td><td>0</td><td>14</td><td>0</td></tr>
+    <tr><td>أثاث بلا مساعد</td><td>0</td><td>6</td><td>0</td></tr>
+  </table>
+  <div class="callout tip mt"><b>الوفر الحقيقي نحو 20%، لا 37%.</b> وهو وفر كبير، لكنه لا يظهر إلا بعد أن تعرف الأداة القواعد.</div>
+  <aside class="notes"><p>أرقام الحل المرجعي للمختبر 1.1. قارنها بما في جداول المشاركين: من نقل رقم الأداة عن نفسها سيجد صفر تأخر في العمود الثاني. الطلب المتأخر الأخير سببه الراحة، القاعدة التي لا يعرفها هذا النموذج. السؤال للقاعة: من يكتب قاعدة سادسة حين تظهر غدًا؟</p></aside>
+</section>
+
+<!-- الجلسة 2 -->
+
+<section class="slide section" id="s2" data-auto="section" data-session="2" data-n="21">
+  <div class="kicker">الجلسة 2</div>
+  <h1>تنبؤ يجب أن يغلب الساذج</h1>
+  <ul class="bullets outcomes"><li>يحسب خطَّي أساس موسميين ساذجين ويقارن بهما تنبؤًا جاهزًا</li><li>يقرأ الخطأ في فترة العطلات منفصلًا عن الأيام العادية</li><li>يكتب قاعدة ثقة تقول متى يُستخدم التنبؤ ومتى خط الأساس</li></ul>
+  <div class="sess-no">02</div>
+  <aside class="notes"><p>الجلسة الثانية: ما نتنبأ به في النقل وخطوط الأساس (كتلة 1)، ثم مقاييس الخطأ وفتراتها (كتلة 2)، ثم التقويم والعطل وقاعدة الثقة (كتلة 3)، ثم المختبر 1.2.</p></aside>
+</section>
+
+<section class="slide" id="what-we-forecast" data-lo="LO3" data-n="22" data-session="2">
+  <div class="kicker">التنبؤ في النقل</div>
+  <h2>كل خطة تبدأ برقم عن الغد</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>الطرود والطلبات</h4><p class="small mb0">كم طلبًا غدًا، وفي الموسم؟ يحدد عدد السائقين والشاحنات.</p></div>
+    <div class="card c-cyan"><h4>الرحلات</h4><p class="small mb0">كم راكبًا في كل ساعة؟ يحدد الجداول وعدد المركبات.</p></div>
+    <div class="card c-coral"><h4>زمن الوصول</h4><p class="small mb0">متى يصل الطلب؟ يحدد ما نعد به العميل.</p></div>
+  </div>
+  <div class="callout warn mt"><b>والخطأ له ثمن مختلف في كل اتجاه.</b> تنبؤ أقل من الواقع يعني سائقين في ورديات أطول وطلبات متأخرة. تنبؤ أعلى يعني تكلفة.</div>
+  <aside class="notes"><p>هذا من <span class="en">USE-FLU-103</span>: التنبؤ نوع من مهام التعلم الآلي، والنموذج يتعلم من الماضي. الجديد هنا: كيف يختبر المدير تنبؤًا جاهزًا من مورِّد قبل أن يخطط به.</p></aside>
+</section>
+
+<section class="slide" id="naive-baselines" data-lo="LO3" data-n="23" data-session="2">
+  <div class="kicker">خطوط الأساس</div>
+  <h2>كل تنبؤ يُقاس بخط ساذج لا يكلّف شيئًا</h2>
+  <table class="t">
+    <tr><th>الخط</th><th>التنبؤ لليوم</th><th>يصلح حين</th></tr>
+    <tr><td>الساذج</td><td>آخر قيمة معروفة</td><td>الغد يشبه اليوم</td></tr>
+    <tr><td>الموسمي الساذج: الأسبوع الماضي</td><td>اليوم نفسه من الأسبوع، قبل 7 أيام</td><td>للأسبوع إيقاع ثابت</td></tr>
+    <tr><td>الموسمي الساذج: العام الماضي</td><td>اليوم نفسه من الأسبوع، قبل 364 يومًا</td><td>للسنة إيقاع ثابت</td></tr>
+  </table>
+  <div class="callout tip mt"><b>إن لم يغلب التنبؤُ الخطَّ الساذج،</b> فأنت تدفع ثمن رقم تستطيع أن تحسبه بنفسك.</div>
+  <aside class="notes"><p>الطرق الساذجة معيار مرجعي معروف في كتب التنبؤ، وتُستخدم لتقيس بها أي طريقة أعقد. اسأل القاعة: أي خط يخطط به مكتبكم اليوم دون أن يسميه؟ غالبًا «مثل الأسبوع الماضي».</p><p>المصادر: Hyndman and Athanasopoulos, Forecasting: Principles and Practice, Some simple forecasting methods.</p></aside>
+</section>
+
+<section class="slide" id="public-trip-records" data-lo="LO3" data-n="24" data-session="2">
+  <div class="kicker">بيانات المختبر</div>
+  <h2>سجلات رحلات عامة، يومًا يومًا، عبر موسمَي عطلات</h2>
+  <div class="cols cols-2 mid">
+    <ul class="bullets">
+      <li>رحلات سيارات الأجرة المبلَّغ عنها في شيكاغو، من بوابة بياناتها المفتوحة</li>
+      <li>461 يومًا: من أكتوبر 2024 إلى 4 يناير 2026</li>
+      <li>العطلات أمريكية: عيد الشكر وعيد الميلاد ورأس السنة</li>
+    </ul>
+    <div class="card c-teal"><h4>لماذا ليست بيانات رَكْب؟</h4><p class="small mb0">«موسم» عرض نتيجته على بيانات عامة. نختبره على البيانات نفسها قبل أن نعطيه بياناتنا.</p></div>
+  </div>
+  <div class="caption">المصدر: بوابة البيانات المفتوحة لمدينة شيكاغو، Taxi Trips (2024-). الأعداد حقيقية، وتنبؤ «موسم» اصطناعي صنعه المقرر.</div>
+  <aside class="notes"><p>الأعداد حقيقية، والتنبؤ المعروض اصطناعي صنعه المقرر. البوابة تنشر الرحلات بإذن يسمح بالاستخدام المعدَّل مع إخلاء مسؤولية نضعه في ملف ATTRIBUTION. الدرس نفسه ينطبق على أي سجلات يومية: طلبات رَكْب، وركاب الحافلات، وعبور الجسور.</p><p>المصادر: City of Chicago, Taxi Trips (2024-)؛ City of Chicago data disclaimer.</p></aside>
+</section>
+
+<section class="slide" id="vendor-headline" data-lo="LO3" data-n="25" data-session="2">
+  <div class="kicker">نشرة «موسم»</div>
+  <h2>خطأ 3.2%، في ستة أسابيع بلا عطلة</h2>
+  <div class="cols cols-3">
+    <div class="stat center"><div class="big">3.2%</div><div class="lbl">خطأ «موسم» النسبي في الأيام العادية</div></div>
+    <div class="stat center"><div class="big">؟</div><div class="lbl">خطأ «الأسبوع الماضي» في الأيام نفسها: تحسبه في المختبر</div></div>
+    <div class="stat center"><div class="big">؟</div><div class="lbl">خطأ «العام الماضي» في الأيام نفسها: تحسبه أيضًا</div></div>
+  </div>
+  <p class="lead mt">في آخر النشرة: «لا يتضمن النموذج تقويمًا للعطلات في نسخته الحالية.»</p>
+  <aside class="notes"><p>رقم النشرة 3.2% على 42 يومًا من 6 أكتوبر إلى 16 نوفمبر 2025. لا تعطِ رقمي الخطين: يحسبهما المشاركون في الخطوات 2 إلى 4 من المختبر (للمدرّب: 6.0% و8.4%). «موسم» يغلب الخطين في هذه الأيام، وهذا صحيح وليس خدعة. السؤال: ماذا عن الأيام التي نشتري التنبؤ من أجلها؟</p></aside>
+</section>
+
+<section class="slide" id="mae-and-mape" data-lo="LO3" data-n="26" data-session="2">
+  <div class="kicker">مقياسان للخطأ</div>
+  <h2>كم رحلة أخطأنا، وكم في المئة</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal flat"><h4>متوسط الخطأ المطلق (MAE)</h4><p class="small mb0">متوسط الفرق بالرحلات، بلا إشارة. يقرؤه مدير الأسطول مباشرة: كم سائقًا زيادة أو نقصًا.</p></div>
+    <div class="card c-coral flat"><h4>متوسط الخطأ النسبي (MAPE)</h4><p class="small mb0">متوسط الفرق مقسومًا على الفعلي. يقارن بين أيام وأماكن بأحجام مختلفة، ويتضخم حين يصغر الفعلي.</p></div>
+  </div>
+  <div class="callout warn mt"><b>المقياس لا يكفي وحده:</b> اسأل دائمًا عن الأيام التي حُسب عليها.</div>
+  <aside class="notes"><p>لا تدخل في المقاييس الأخرى. يكفي أن يعرفوا أن الخطأ النسبي يعاقب الأيام الصغيرة: في عيد الميلاد الفعلي 5,220 رحلة فقط، فأي خطأ فيه يكبر نسبيًا. لذلك نقرأ المقياسين معًا.</p><p>المصادر: Hyndman and Athanasopoulos, Forecasting: Principles and Practice, Evaluating point forecast accuracy.</p></aside>
+</section>
+
+<section class="slide" id="check-error-period" data-lo="LO3" data-n="27" data-session="2">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي رقم تطلب من المورِّد؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3" data-id="check-error-period-q1">
+    <p class="lead">تشتري تنبؤًا لتخطط عدد السائقين في موسم العيد. المورِّد يعرض خطأ 3.2% على ستة أسابيع من الخريف. ما الذي تطلبه قبل أن تقرر؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يرى أن مقياسًا أدق يحل المشكلة: المقياس الآخر على الأيام نفسها يخفي السؤال نفسه" data-k="أ">الخطأ نفسه بمقياس آخر غير الخطأ النسبي</div>
+      <div class="opt" data-why="يظن أن كثرة الأيام تكفي: سنة كاملة متوسطها يغرق أيام الموسم القليلة" data-k="ب">الخطأ على سنة كاملة بدل ستة أسابيع</div>
+      <div class="opt" data-why="يقبل الرقم إن ثبت أنه صحيح: الرقم قد يكون صحيحًا ولا يجيب عن سؤالك" data-k="ج">شهادة بأن الرقم حُسب حسابًا صحيحًا</div>
+      <div class="opt" data-ok data-k="د">الخطأ على موسم عيد سابق مع خطَّي الأساس</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> قرارك في الموسم، فالدليل يجب أن يكون في موسم، ومقارنًا بما تستطيع حسابه بنفسك.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: د. إن اختار كثيرون «ب» فقل: سنة كاملة فيها نحو عشرين يوم عطلة من 365؛ متوسطها يشبه الأيام العادية.</p></aside>
+</section>
+
+<section class="slide" id="hijri-holidays" data-lo="LO3" data-n="28" data-session="2">
+  <div class="kicker">عندنا</div>
+  <h2>أعيادنا تتقدم نحو أحد عشر يومًا كل عام</h2>
+  <div class="cols cols-2 mid">
+    <ul class="bullets">
+      <li>العيدان ورمضان بالتقويم الهجري، والتخطيط بالميلادي</li>
+      <li>«اليوم نفسه قبل 364 يومًا» يقع بعيدًا عن العيد</li>
+      <li>المطلوب خط أساس بتقويم: <b>العيد نفسه</b> في العام الماضي</li>
+      <li>ومثله: بداية الدراسة، والمواسم، والفعاليات الكبرى</li>
+    </ul>
+    <div class="card c-teal"><h4>سؤال للمورِّد</h4><p class="small mb0">هل في نموذجكم تقويم هجري؟ أرونا خطأه في رمضان والعيدين في العامين الماضيين، مقابل خط العيد نفسه.</p></div>
+  </div>
+  <aside class="notes"><p>السنة الهجرية أقصر من الميلادية بنحو أحد عشر يومًا، فيتقدم العيد في التقويم الميلادي كل عام. لا تذكر تواريخ أعياد قادمة على الشريحة. في الإضافي من المختبر يبنون خط «العطلة نفسها» لعيد الميلاد، وهو الفكرة نفسها.</p></aside>
+</section>
+
+<section class="slide" id="trust-rule" data-lo="LO3 LO5" data-n="29" data-session="2">
+  <div class="kicker">قاعدة الثقة</div>
+  <h2>قاعدة تقول متى نستخدم التنبؤ، ومتى الخط الساذج</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>1 · الفترة</b>أيام عادية أم موسم أم عطلة؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>2 · الدليل</b>هل غلب التنبؤ الخط الساذج في فترة مثلها؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>3 · القرار</b>التنبؤ، أو الخط، أو الاثنان مع مراجعة بشرية</div>
+  </div>
+  <div class="callout note mt"><b>هذا ما يطلبه ناتج التعلم الثالث:</b> جدول أخطاء وقاعدة ثقة.</div>
+  <aside class="notes"><p>مثال قاعدة مقبولة: «نستخدم موسم في الأسابيع العادية؛ في أسابيع العطلات نخطط بخط العطلة نفسها في العام الماضي حتى يغلبه موسم على موسم كامل؛ ونطلب من المورِّد تقويمًا هجريًا». القاعدة لها مالك: مازن الشعيل يراجع خطة السائقين قبل كل موسم.</p></aside>
+</section>
+
+<section class="slide" id="check-trust-rule" data-lo="LO3" data-n="30" data-session="2">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي قاعدة ثقة تكتب؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3" data-id="check-trust-rule-q1">
+    <p class="lead">التنبؤ يغلب «الأسبوع الماضي» في الأيام العادية، ويخسر أمام «العام الماضي» في العطلات. أي قاعدة تكتبها لتخطيط السائقين؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يحكم بالمتوسط العام: يُخفي الأيام التي يكون فيها الخطأ أغلى" data-k="أ">نستخدم التنبؤ دائمًا، فمتوسط خطئه أقل</div>
+      <div class="opt" data-ok data-k="ب">التنبؤ في الأيام العادية، و«العام الماضي» في العطلات</div>
+      <div class="opt" data-why="يرفض أداة تفوقت حيث اختُبرت: الخسارة في فترة لا تلغي الفوز في أخرى" data-k="ج">نترك التنبؤ ونخطط كل الأيام بـ «العام الماضي» وحده</div>
+      <div class="opt" data-why="يظن أن متوسط طريقتين أضمن: يجمع خطأ الأولى في العطلات مع خطأ الثانية في الأيام العادية" data-k="د">نأخذ متوسط التنبؤ والخطين كل يوم</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> قاعدة الثقة تتبع الدليل في كل فترة، وتبقي الباب مفتوحًا: حين يغلب التنبؤ الخط في عطلة سابقة، تتغير القاعدة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ب. إن اختار أحد «د» فلا ترفضها بسرعة: المتوسط أحيانًا ينفع، لكن الدليل هنا لا يدعمه، ولم نختبره.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-1-2" data-auto="lab" data-lab="1.2" data-label="المختبر 1.2" data-n="31" data-session="2">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 1.2 · 75 دقيقة</div><h2>«موسم» في العطلات</h2><p class="lead small">تختبر تنبؤ «موسم» الجاهز على سجلات رحلات يومية عامة مقابل خطَّي أساس، في ستة أسابيع عادية وستة من العطلات، وتكتب جدول الأخطاء وقاعدة الثقة</p><a class="nb" href="../labs/D1_2_forecast.html">D1_2_forecast.html</a></div><ul class="checklist"><li>اقرأ نشرة المورِّد وحدد ما تقيسه وما تسكت عنه <span class="min">7 د</span></li><li>احسب خطَّي الأساس: الأسبوع الماضي والعام الماضي <span class="min">15 د</span></li><li>احسب الأخطاء المطلقة والنسبية للطرق الثلاث <span class="min">15 د</span></li><li>املأ جدول الأخطاء للفترتين العادية والعطلات <span class="min">13 د</span></li><li>اقرأ أيام العطلات يومًا يومًا: أين أخطأت كل طريقة؟ <span class="min">10 د</span></li><li>اكتب قاعدة الثقة وأضف سطر التنبؤ إلى خريطتك <span class="min">15 د</span></li><li class="stretch">✱ إضافي: ابنِ خط أساس ثالثًا يأخذ اليوم نفسه من العطلة في العام الماضي، واكتب ما يعنيه ذلك لعيد يتقدّم في التقويم الميلادي كل عام</li></ul></div>
+  <aside class="notes"><p>المساعد بدور المعلّم: يشرح معادلة، ولا يملأ الجدول. الصف 372 أول يوم فيه تنبؤ. راقب من يحسب متوسطًا واحدًا للأسابيع الاثني عشر: أعده إلى عمود period. من يعمل في Orange أو KNIME يستخدم trips_daily.csv. لا يحتاج المختبر شيئًا من المختبر 1.1.</p></aside>
+</section>
+
+<section class="slide" id="holiday-errors" data-lo="LO3" data-n="32" data-session="2">
+  <div class="kicker">مراجعة المختبر 1.2</div>
+  <h2>في العطلات انقلب الترتيب</h2>
+  <div class="bars">
+    <div class="row"><span>«موسم»</span><div class="bar c-coral" style="--w:97%"></div><span class="val">35.5%</span></div>
+    <div class="row"><span>الأسبوع الماضي</span><div class="bar c-amber" style="--w:100%"></div><span class="val">36.5%</span></div>
+    <div class="row"><span>العام الماضي</span><div class="bar c-teal" style="--w:40%"></div><span class="val">14.6%</span></div>
+  </div>
+  <p class="lead mt">الخطأ النسبي من 24 نوفمبر 2025 إلى 4 يناير 2026، 42 يومًا.</p>
+  <div class="caption">رحلات شيكاغو الفعلية من بوابتها المفتوحة؛ تنبؤ «موسم» اصطناعي.</div>
+  <aside class="notes"><p>من الحل المرجعي للمختبر 1.2. بالرحلات: «موسم» 3,768، الأسبوع الماضي 4,754، العام الماضي 2,014. الخط الذي خسر في الخريف فاز في العطلات، لأنه وحده رأى عطلة من قبل. اسأل قبل أن تعرضها: من وجد الترتيب نفسه في جدوله؟</p></aside>
+</section>
+
+<section class="slide" id="calendar-blind" data-lo="LO3" data-n="33" data-session="2">
+  <div class="kicker">مراجعة المختبر 1.2 · نموذج بلا تقويم</div>
+  <h2>عيد الميلاد: «موسم» توقّع 24,074 رحلة، وكانت 5,220</h2>
+  <table class="t">
+    <tr><th>25 ديسمبر 2025</th><th>الرحلات</th><th>ما حدث</th></tr>
+    <tr><td>الفعلي</td><td>5,220</td><td></td></tr>
+    <tr><td>«موسم»</td><td>24,074</td><td>كرر أسابيع ديسمبر العادية</td></tr>
+    <tr><td>العام الماضي (364 يومًا)</td><td>11,194</td><td>أخذ 26 ديسمبر 2024: يوم بعد العيد</td></tr>
+    <tr class="hl"><td>عيد الميلاد 2024 نفسه</td><td>5,326</td><td>العطلة نفسها، لا اليوم نفسه من الأسبوع</td></tr>
+  </table>
+  <div class="caption">رحلات شيكاغو الفعلية من بوابتها المفتوحة؛ تنبؤ «موسم» اصطناعي.</div>
+  <aside class="notes"><p>الدرس مزدوج: النموذج بلا تقويم يخطئ في العطلة، وخط «العام الماضي» نفسه يخطئ حين تقع العطلة في يوم آخر من الأسبوع. عيد الشكر لا يواجه هذه المشكلة لأنه خميس كل عام: في 2025 كان الفعلي 9,114 والعام الماضي 7,860.</p><p>انقلها إلى المملكة: عيد الميلاد انزاح يومًا واحدًا عن خط 364 يومًا فضاعف خطأه، والعيد عندنا ينزاح نحو أحد عشر يومًا كل عام. خط «العام الماضي» بالتقويم الميلادي يقع في رمضان أو العيد أو خارجهما بحسب السنة؛ الخط الذي يصلح هو «العيد نفسه» في العام الماضي. هذا السطر الثالث في قاعدة الثقة التي كتبوها.</p></aside>
+</section>
+
+<section class="slide" id="wrap-up" data-n="34" data-session="2">
+  <div class="kicker">خلاصة اليوم 1</div>
+  <h2>ثلاثة أمور تبقى معك</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>القواعد قبل الكيلومترات</h4><p class="small mb0">أداة الحل صادقة بالقواعد التي أُعطيت لها. قارن الخطتين بالقواعد نفسها.</p></div>
+    <div class="card c-coral"><h4>الخط الساذج أولًا</h4><p class="small mb0">تنبؤ لا يغلب «الأسبوع الماضي» أو «العام الماضي» في الفترة التي تهمك لا يستحق ثمنه فيها.</p></div>
+    <div class="card c-purple"><h4>الفترة جزء من الرقم</h4><p class="small mb0">خطأ بلا أيامه نصف رقم. والعطل الهجرية تتحرك.</p></div>
+  </div>
+  <aside class="notes"><p>اطلب من كل مشارك جملة واحدة: ما الذي سيسأله غدًا لمورِّد يعرض عليه أداة؟ اكتب ثلاثًا منها على اللوح.</p></aside>
+</section>
+
+<section class="slide dark" id="next" data-label="التالي" data-n="35" data-session="2">
+  <div class="kicker">التالي</div>
+  <h2>اليوم 2: السلامة بأرقام صادقة، والأتمتة بكلمات دقيقة</h2>
+  <p class="lead">أحضر خريطتك بسطرَي اليوم. من لم يكمل المختبر يكتب سطره من بطاقة الحالة في use_cases_14.txt.</p>
+  <aside class="notes"><p>لا قراءة مطلوبة الليلة. من لم يسلّم بطاقة القرار التحضيرية يسلّمها صباحًا. تذكير: المختبر 2.2 دون ذكاء اصطناعي في خطواته الأربع الأولى.</p></aside>
+</section>
+</div>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T20:45:20Z","version":"2027.1.0","commit":"3b3a2f2"},"course":{"id":"use-sec-205","code":"USE-SEC-205","title":"الذكاء الاصطناعي في التنقل والخدمات اللوجستية","track":"fluency","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/use-sec-205/","repo":"SDAIAAcademy/use-sec-205","home":"../index.html"},"deck":{"id":"day1","kind":"day","day":1,"label":"اليوم 1","title":"خطة على الطريق وتنبؤ بالموسم","prev":null,"next":"day2.html","md":"day1.md","alt":{}},"sessions":[{"n":1,"label":"الجلسة 1","title":"أداة الحل لا تعرف ما يعرفه المرسِل","slide":"s1","outcomes":["يفرّق بين أداة تحسين تختار خطة وأداة تنبؤ تقدّر رقمًا","يهيئ تشغيلًا لأداة حل بالسعات والنوافذ الزمنية ويقرأ ما تقوله عن نفسها","يقارن خطتين بالقواعد نفسها ويسمّي القيود التي أغفلتها الأداة"],"minutes":150,"lab":{"id":"1.1","title":"أداة الحل مقابل خطة المرسِل","minutes":75,"href":"../labs/D1_1_routing.html"}},{"n":2,"label":"الجلسة 2","title":"تنبؤ يجب أن يغلب الساذج","slide":"s2","outcomes":["يحسب خطَّي أساس موسميين ساذجين ويقارن بهما تنبؤًا جاهزًا","يقرأ الخطأ في فترة العطلات منفصلًا عن الأيام العادية","يكتب قاعدة ثقة تقول متى يُستخدم التنبؤ ومتى خط الأساس"],"minutes":150,"lab":{"id":"1.2","title":"«موسم» في العطلات","minutes":75,"href":"../labs/D1_2_forecast.html"}}],"slides":[{"id":"title","n":1,"title":"خطة على الطريق وتنبؤ بالموسم","kind":"title","session":0,"hash":"c73b76f5","md":"#### [day1#title] خطة على الطريق وتنبؤ بالموسم\n\n*أكاديمية سدايا · الذكاء الاصطناعي في التنقل والخدمات اللوجستية*\n\nاليوم 1: تقارن خطة أداة الحل بخطة المرسِل بقواعده هو، ثم تختبر تنبؤًا بالطلب في العطلات مقابل خطوط أساس ساذجة\n\nمسار الطلاقة في البيانات والذكاء الاصطناعي · يومان تدريبيان + يوم للمشروع الختامي · جلستان · مختبران · USE-SEC-205","notes":"رحّب بالمشاركين وعرّف بنفسك. سؤال برفع اليد يضبط الإيقاع: من وقّع على شراء أداة تخطيط أو تنبؤ أو مراقبة في النقل، أو أوصى بها؟ من سأل مورِّدًا: مقابل ماذا قستم هذا الرقم؟ من رأى رقم سلامة لم يُذكر معه عدد الكيلومترات؟\n\nاليوم جلستان طويلتان: في كل منهما نحو 75 دقيقة من المفاهيم بثلاث كتل، ثم مختبر مدته 75 دقيقة. الاستراحات بزر B، وليست شرائح.","minutes":null,"lo":[]},{"id":"agenda","n":2,"title":"خطة على الطريق وتنبؤ بالموسم","kind":"content","session":0,"hash":"fa714df4","md":"#### [day1#agenda] خطة على الطريق وتنبؤ بالموسم\n\n*اليوم*\n\n- **الجلسة 1 · أداة الحل لا تعرف ما يعرفه المرسِل**: استخدامات الذكاء الاصطناعي في النقل، والتحسين مقابل التنبؤ، ومسألة تخطيط مسارات المركبات بسعاتها ونوافذها، والقيود التي لا تصل إلى النموذج، والمقارنة العادلة بين خطتين\n- **الجلسة 2 · تنبؤ يجب أن يغلب الساذج**: التنبؤ بالرحلات والطرود، وخطوط الأساس الساذجة والموسمية، ومقاييس الخطأ وفتراتها، والتقويم والمناسبات في التنبؤ، والعطل الهجرية المتنقلة، وقاعدة الثقة","notes":"جلستان اليوم: أداة الحل مقابل خطة المرسِل صباحًا، ثم تنبؤ بالطلب في العطلات. غدًا: معدلات الحوادث، ثم مستويات الأتمتة والخريطة.","minutes":null,"lo":[]},{"id":"course-at-a-glance","n":3,"title":"يومان من المختبرات، ثم خريطة تدافع عنها","kind":"content","session":0,"hash":"82fb8961","md":"#### [day1#course-at-a-glance] يومان من المختبرات، ثم خريطة تدافع عنها\n\n*المقرر في لمحة*\n\n- **اليوم 1 · خطة وتنبؤ.** أداة الحل مقابل المرسِل، ثم تنبؤ بالطلب مقابل خطوط أساس ساذجة. جدول المقارنة وقاعدة الثقة\n- **اليوم 2 · سلامة وأتمتة.** معدلات الحوادث لكل مليون كيلومتر، ثم ثمانية ادعاءات على مستويات الأتمتة. مذكرة اللجنة وجدول الادعاءات\n- **المناقشة الختامية.** فحص فردي دون ذكاء اصطناعي، ثم خريطتك أمام لجنة سلامة في جلسة محاكاة. الخريطة ومشروع تجريبي واحد\n\n> **الخريطة تبدأ اليوم.** آخر خطوة في كل مختبر تضيف سطرًا إليها، فتصل إلى المناقشة الختامية بأربعة أسطر جاهزة.","notes":"المقرر لمن يخطط الشبكات ويدير الأساطيل ويُسأل عن السلامة المرورية، لا لمن يبني النماذج. نفترض ما تعلّموه في USE-FLU-103: المعدل الأساسي، وتغيّر البيانات، ومساءلة ادعاء المورِّد. ملفات السلامة الهندسية للمركبات الذاتية (حالة السلامة، وقياس زمن التولي) في DEV-PHY-401، لا هنا.","minutes":null,"lo":[]},{"id":"rakb-logistics","n":4,"title":"شركة رَكْب: 200 مركبة تسلّم الطرود والبقالة في الرياض","kind":"content","session":0,"hash":"1c02b582","md":"#### [day1#rakb-logistics] شركة رَكْب: 200 مركبة تسلّم الطرود والبقالة في الرياض\n\n*حالة دراسية واحدة طوال المقرر*\n\nشركة افتراضية، لها أربعة مستودعات، ولجنة سلامتها تنظر في أربعة عروض.\n\n1. **أداة حل** تخطط المسارات\n2. **«موسم»** يتنبأ بالطلب\n3. **«يَقِظ»** كاميرا تراقب السائق\n4. **مركبات ذاتية** في الساحة والأحياء\n\n- **من في القاعة معك.** ضحى الخنيني، تخطيط الشبكة. مازن الشعيل، عمليات الأسطول. أروى الزامل، قائدة السلامة ورئيسة اللجنة. عايد قطب، مشرف الإرسال. نوف المحروس، حماية البيانات. حمدان الصقري، ممثل السائقين.","notes":"كل الأسماء والجهات افتراضية. البيانات: الطلبات والأسطول والحوادث اصطناعية ومولَّدة ببذرة ثابتة؛ المسافات من طرق حقيقية في OpenStreetMap؛ سجلات الرحلات في الجلسة الثانية عامة من مدينة شيكاغو. اسأل: من منكم يجلس في مقعد أحد هؤلاء الستة في جهته؟","minutes":null,"lo":[]},{"id":"ai-policy","n":5,"title":"ثلاث قواعد، بحسب ما يقيسه كل نشاط","kind":"content","session":0,"hash":"288f782d","md":"#### [day1#ai-policy] ثلاث قواعد، بحسب ما يقيسه كل نشاط\n\n*كيف نستخدم الذكاء الاصطناعي هنا*\n\n| النشاط | القاعدة | لماذا |\n| --- | --- | --- |\n| الفحص الفردي، ووضع الادعاءات على المستويات في المختبر 2.2 | **دون ذكاء اصطناعي** | قراءة الادعاء والحكم فيه مهارتك أنت |\n| المختبرات 1.1 و1.2 و2.1 | **مساعد بدور المعلّم** | يشرح خلية أو معادلة، والمقارنة والحكم لك |\n| الخريطة | **مسموح كاملًا** | تدافع عنها حيًّا، وتعيد تقييم حالة تختارها اللجنة |\n\n> **لا بيانات حقيقية من جهتك في أي مساعد عام.** لا مواقع سائقين ولا عملاء ولا لوحات. ملفات المقرر اصطناعية أو عامة، وتكفي لكل خطوة.","notes":"هذه السياسة من وصف المقرر، لا من اختيار المدرب. قلها بوضوح الآن، وكررها قبل المختبر 2.2.","minutes":null,"lo":[]},{"id":"s1","n":6,"title":"أداة الحل لا تعرف ما يعرفه المرسِل","kind":"section","session":1,"hash":"5f37bec8","md":"#### [day1#s1] أداة الحل لا تعرف ما يعرفه المرسِل\n\n*الجلسة 1*\n\n- يفرّق بين أداة تحسين تختار خطة وأداة تنبؤ تقدّر رقمًا\n- يهيئ تشغيلًا لأداة حل بالسعات والنوافذ الزمنية ويقرأ ما تقوله عن نفسها\n- يقارن خطتين بالقواعد نفسها ويسمّي القيود التي أغفلتها الأداة","notes":"الجلسة الأولى: نحو 75 دقيقة من المفاهيم بثلاث كتل (أين الذكاء الاصطناعي في النقل، ما تفعله أداة الحل، ما لا تعرفه)، ثم المختبر 1.1.","minutes":null,"lo":["LO2","LO5"]},{"id":"uses-in-mobility","n":7,"title":"أربعة استخدامات، ولكل منها سؤال مختلف","kind":"content","session":1,"hash":"a5b82c27","md":"#### [day1#uses-in-mobility] أربعة استخدامات، ولكل منها سؤال مختلف\n\n*أين يعمل الذكاء الاصطناعي في النقل*\n\n- **التخطيط والإرسال.** من يأخذ أي طلب، وبأي ترتيب. السؤال: **هل تعرف الأداة قواعدنا؟**\n- **التنبؤ بالرحلات والطرود.** كم طلبًا غدًا، وفي الموسم. السؤال: **هل يغلب الساذج؟**\n- **المعلوماتية عن بعد ومراقبة السائق.** سرعة وكبح وانتباه. السؤال: **لكل كم كيلومتر؟ وما الذي يُجمع عن الإنسان؟**\n- **إدارة المرور والنقاط الساخنة.** أين تقع الحوادث. السؤال: **أخطر، أم أكثر مرورًا؟**","notes":"اربط كل استخدام بمختبر: التخطيط الآن، والتنبؤ بعد الظهر، والمعلوماتية والنقاط الساخنة صباح الغد، والأتمتة بعد ظهر الغد. لا يلزم أن يعرف أحد كيف يعمل النموذج من الداخل: الأسئلة الأربعة أسئلة مدير.","minutes":null,"lo":["LO5"]},{"id":"prework-decisions","n":8,"title":"كل قرار تخطيط فيه قيد لا يظهر في أي ملف","kind":"content","session":1,"hash":"d5153b7a","md":"#### [day1#prework-decisions] كل قرار تخطيط فيه قيد لا يظهر في أي ملف\n\n*ماذا وجدتم في بطاقاتكم*\n\n- سائق لا يدخل حيًّا معينًا\n- رصيف تحميل يُغلق في جزء من اليوم\n- عميل لا يستلم إلا من شخص يعرفه\n- شاحنة لا تصلح لنوع من البضاعة\n\n- **سؤال من البطاقة.** ما القيد الذي يعرفه صاحب القرار ولا يظهر في أي ملف؟ هذا السؤال هو المختبر 1.1 كله.","notes":"افتح البطاقات التي سلّموها قبل الورشة (العمل التحضيري، نحو ساعة). اقرأ ثلاث إجابات عن السؤال الرابع دون أسماء جهاتهم. من لم يسلّم بطاقته يختار قرارًا من ملف رَكْب التعريفي ويكمل بطاقته مساءً.","minutes":null,"lo":["LO5"]},{"id":"optimise-vs-predict","n":9,"title":"أداة تختار خطة، وأداة تقدّر رقمًا","kind":"content","session":1,"hash":"cf9ed4a5","md":"#### [day1#optimise-vs-predict] أداة تختار خطة، وأداة تقدّر رقمًا\n\n*نوعان من الأدوات*\n\n|  | التحسين (optimisation) | التنبؤ (prediction) |\n| --- | --- | --- |\n| ما تخرجه | خطة: من يذهب إلى أين وبأي ترتيب | رقم: كم طلبًا غدًا، وكم دقيقة للوصول |\n| ما تحتاجه | **هدف وقيود** مكتوبة | **بيانات ماضية** تشبه المستقبل |\n| كيف تخطئ | تلتزم بقيود ناقصة التزامًا تامًا | تكرر الماضي حين يتغير |\n| ما تسأله | هل تعرف قواعدنا؟ | هل تغلب خطًا ساذجًا؟ |","notes":"كثير من العروض تمزج الاثنين: تنبؤ بالطلب يغذي أداة تخطيط. لكن الخطأين مختلفان: أداة الحل لا تتعلم من البيانات، بل تبحث عن أفضل خطة بالقواعد التي أعطيناها. إن نقصت القواعد، جاءت الخطة «مثالية» لعالم غير عالمنا.","minutes":null,"lo":["LO2"]},{"id":"vrp-in-one-slide","n":10,"title":"المسألة: مستودع، وطلبات، وشاحنات، وقيود","kind":"content","session":1,"hash":"f829cb63","md":"#### [day1#vrp-in-one-slide] المسألة: مستودع، وطلبات، وشاحنات، وقيود\n\n*مسألة تخطيط مسارات المركبات*\n\n- **المدخلات:** مواقع الطلبات، والمسافة والزمن بين كل نقطتين\n- **السعة:** صناديق كل شاحنة\n- **النوافذ الزمنية:** متى يُقبل التسليم\n- **زمن الخدمة:** دقائق التوقف عند كل طلب\n- **الهدف:** أقصر مسافة، أو أقل شاحنات\n\n- **في رَكْب.** 120 طلبًا، وثماني شاحنات سعة كل منها 40 صندوقًا، ووردية من 480 دقيقة. المسافات من طرق الرياض في OpenStreetMap.","notes":"اسم المسألة بالإنجليزية Vehicle Routing Problem with Time Windows. أدوات الحل المفتوحة تحلها: OR-Tools من Google وVROOM مثالان قابلان للتبديل. لا تشرح الخوارزمية: الأداة تجرب ترتيبات كثيرة وتحتفظ بالأفضل وفق الهدف.\n\nالمصادر: Google OR-Tools، Vehicle Routing Problem with Time Windows.","minutes":null,"lo":["LO2"]},{"id":"open-map-data","n":11,"title":"الخريطة المفتوحة تعطي مسافة الطريق، لا خط الطيران","kind":"content","session":1,"hash":"9b9d8fb0","md":"#### [day1#open-map-data] الخريطة المفتوحة تعطي مسافة الطريق، لا خط الطيران\n\n*من أين تأتي المسافات*\n\n- **121 × 121** مسافة وزمنًا بين المستودع وكل طلب\n- **11.1 كم** متوسط المسافة على الطرق بين نقطتين\n- **12 دقيقة** متوسط زمن القيادة بينهما، بلا ازدحام\n\n> **الزمن بلا ازدحام.** الخريطة لا تعرف ساعة الذروة. هذا قيد آخر يعرفه المرسِل ولا يعرفه الملف.\n\nبيانات الخريطة © مساهمو OpenStreetMap، برخصة ODbL؛ الجدولان محسوبان عبر OSRM. مواقع الطلبات اصطناعية.","notes":"حسبنا الجدولين مرة واحدة من خادم OSRM العام على بيانات OpenStreetMap، ونشرناهما مع المختبر بشروط رخصة ODbL. المختبر لا يتصل بالخادم. المتوسطان من الجدولين في `distance_m.csv` و`duration_s.csv`.\n\nالمصادر: OpenStreetMap copyright and licence؛ Project OSRM.","minutes":null,"lo":["LO2"]},{"id":"what-the-model-knows","n":12,"title":"أداة الحل تعرف ما كُتب لها فقط","kind":"content","session":1,"hash":"d10b31d1","md":"#### [day1#what-the-model-knows] أداة الحل تعرف ما كُتب لها فقط\n\n*ما يعرفه النموذج*\n\n1. **1 · ما في الملف** المواقع والصناديق والنوافذ\n2. **2 · ما في النموذج** السعة والنوافذ و5 دقائق لكل تسليم\n3. **3 · ما في رأس المرسِل** قواعد في ملاحظاته لم تُكتب للأداة\n\n> **الفجوة بين 2 و3** هي ما تبحث عنه في المختبر. أحيانًا تكون المعلومة في الملف، ولم يطلب أحد من النموذج أن يقرأها.","notes":"اضغط مرة لكل خطوة. في الخطوة 3 لا تعدّد القواعد هنا: اثنتان منها في شريحة «خطة عايد»، والراحة في نقطة التحقق، والرابعة (وقت الأبراج) يجدونها بأنفسهم في ملاحظات عايد وفي الملف. تُجمع كلها في شريحة «القواعد الأربع» بعد المختبر. ملف الطلبات فيه أعمدة cold وlift وtower، والنموذج الأول لا يقرؤها.","minutes":null,"lo":["LO2"]},{"id":"check-solver-says-zero","n":13,"title":"الأداة تقول: صفر تأخر","kind":"quiz","session":1,"hash":"5e9e1f67","md":"#### [day1#check-solver-says-zero] الأداة تقول: صفر تأخر\n\n*نقطة تحقق*\n\n**سؤال:** أداة حل تقترح خطة أقصر بكثير من خطة المرسِل، وتقول إن كل الطلبات في نوافذها. ما أول ما تفعله قبل أن تعتمدها؟\n\n- أ. تعتمدها، فالأداة تحسب أدق من الإنسان\n- ب. تقارن الكيلومترات بخطة المرسِل وتختار الأقصر\n- ج. تعيد قيادة الخطتين بقواعد المرسِل ثم تقارن\n- د. تجربها يومًا كاملًا في مستودع واحد ثم تقرر","notes":"الإجابة: ج. لا تذكر نسبة الوفر: يقيسها المشاركون في الخطوة 3 من المختبر (للمدرّب: 357.2 كم مقابل 565.0 كم، أي 37%). ولا تكشف ما يحدث بعد إعادة القيادة. إن اختار كثيرون «د» فقل: التجربة الميدانية مهمة، لكنها بعد الفحص المكتبي لا بدلًا منه.","minutes":null,"lo":["LO2"]},{"id":"replay-not-trust","n":14,"title":"أعد قيادة كل خطة بالقواعد نفسها","kind":"content","session":1,"hash":"9696431d","md":"#### [day1#replay-not-trust] أعد قيادة كل خطة بالقواعد نفسها\n\n*المقارنة العادلة*\n\n- **إعادة القيادة (replay).** كل شاحنة تخرج في الدقيقة 0، وتسير بأزمنة الخريطة، وتنتظر إن وصلت مبكرًا، وتأخذ راحتها، وتعود. نحسب ما يحدث فعلًا.\n- **ما نعدّه.** الكيلومترات، والطلبات المتأخرة ودقائقها، والشاحنات التي تعود بعد الوردية، وكل طلب في شاحنة لا تصلح له.\n\n> **هذا ما يطلبه ناتج التعلم الثاني:** مقارنة المسافة والتأخر تسمّي القيود التي أغفلتها الأداة.","notes":"في الدفتر الدالة `replay` تفعل ذلك. نشغّلها على خطة عايد وعلى خطة الأداة. المشاركون لا يكتبون كودًا: يشغّلون الخلايا ويقرؤون.","minutes":null,"lo":["LO2"]},{"id":"manual-plan-is-data","n":15,"title":"الخطة اليدوية ليست خطأ: هي سجلّ قواعد غير مكتوبة","kind":"content","session":1,"hash":"b106aa57","md":"#### [day1#manual-plan-is-data] الخطة اليدوية ليست خطأ: هي سجلّ قواعد غير مكتوبة\n\n*خطة عايد*\n\n- **؟** كيلومترات خطة عايد بقواعده: تقيسها في المختبر\n- **أطول** من خطة الأداة، ويحترم التبريد والمساعد\n\n- لا بقالة مبرّدة في شاحنة عادية\n- لا أثاث مع سائق وحده\n- لا يعرف أقصر طريق، ويعرف من يغضب","notes":"لا تعطِ الأرقام هنا: يقيسها المشاركون في الخطوة 2 من المختبر (للمدرّب: 565.0 كم، و3 طلبات متأخرة، و84 دقيقة تأخرًا). لا تجعل عايد خصمًا: هو مصدر القواعد. المديرون في القاعة يعرفون مرسِلًا مثله. الخطة اليدوية أطول لأنه يقسّم بالاتجاه ويرتب بالنوافذ.","minutes":null,"lo":["LO2"]},{"id":"constraint-owner","n":16,"title":"قبل التشغيل: سجلّ قيود له مالك","kind":"content","session":1,"hash":"748716f4","md":"#### [day1#constraint-owner] قبل التشغيل: سجلّ قيود له مالك\n\n*من يملك القيود*\n\n- **اكتبها.** كل قاعدة في رأس المرسِل تصير سطرًا: ما هي، ولماذا، وكم طلبًا تمس.\n- **اختبرها.** أعد قيادة خطة الأداة بها كل أسبوع، لا مرة واحدة عند الشراء.\n- **اسمِّ مالكها.** المرسِل يراجع الخطة قبل خروج الشاحنات، ويستطيع أن يردّها.\n\n> **هذا دور التولي في التخطيط:** من يرى الخطة قبل أن تقع، ويستطيع إيقافها.","notes":"هذا ما يدخل الخريطة في سطر الحالة U01: دور التولي هو المرسِل الذي يراجع الخطة. أثر السلامة غير مباشر: الخطة تحدد الحمل والإيقاع المطلوب من السائق. مبدأ المساءلة والمسؤولية في مبادئ أخلاقيات الذكاء الاصطناعي يحمّل المسؤولية للمصممين والموردين والمشترين والمطورين والمالكين معًا، ويطلب أن يكون من ينفّذ النظام معروفًا، وأن يظهر الإشراف البشري في دورة حياة النظام كلها. فشراء الأداة من مورِّد لا يعفي رَكْب: تسمية مالك للقيود جزء من مسؤوليتها.\n\nالمصادر: سدايا، مبادئ أخلاقيات الذكاء الاصطناعي.","minutes":null,"lo":["LO2","LO5"]},{"id":"check-missing-rule","n":17,"title":"قاعدة غير موجودة في النموذج","kind":"quiz","session":1,"hash":"87159b66","md":"#### [day1#check-missing-rule] قاعدة غير موجودة في النموذج\n\n*نقطة تحقق*\n\n**سؤال:** بعد إضافة ثلاث قواعد، بقي طلب واحد متأخرًا بسبب راحة السائق، وهذه النسخة من الأداة لا تعرف الراحة. ما الأنسب؟\n\n- أ. تبقي الراحة على المرسِل وتطلب أداة تدعمها\n- ب. تلغي الراحة في الأيام المزدحمة لتطابق الخطة\n- ج. ترفض الأداة وتعود إلى الخطة اليدوية كاملة\n- د. تطيل نوافذ التسليم حتى يختفي التأخر من التقرير","notes":"الإجابة: أ. أدوات حل كثيرة تدعم فترات الراحة (VROOM مثلًا)، لكن لا تذكر قدرة أداة بعينها دون أن تفتح صفحتها. إن اختار أحد «ب» فقل: هذا ما يحدث حين يصير النموذج هو القاعدة.","minutes":null,"lo":["LO2"]},{"id":"lab-1-1","n":18,"title":"أداة الحل مقابل خطة المرسِل","kind":"lab","session":1,"hash":"9aeff60f","md":"#### [day1#lab-1-1] أداة الحل مقابل خطة المرسِل\n\nالمختبر 1.1 · 75 دقيقة\n\nتشغّل أداة حل لتخطيط المسارات في دفتر جاهز على 120 طلبًا اصطناعيًا فوق طرق OpenStreetMap، وتعيد قيادة خطتها وخطة المرسِل اليدوية بقواعده الأربع، وتسمّي القيود التي أغفلتها، ثم تضيفها وتقارن\n\n[D1_1_routing.html](https://sdaiaacademy.github.io/use-sec-205/labs/D1_1_routing.html)\n\n- [ ] راجع بطاقة قرارك التحضيرية مع زميل (8 د)\n- [ ] اقرأ ملاحظات المرسِل وأعد قيادة خطته اليدوية (10 د)\n- [ ] شغّل أداة الحل أول مرة واقرأ ما تقوله عن خطتها (7 د)\n- [ ] أعد قيادة خطة الأداة بقواعد المرسِل وسمِّ القيود التي أغفلتها (20 د)\n- [ ] أعطِ الأداة ما يمكن إعطاؤه من القواعد وقارن الخطط الثلاث (15 د)\n- [ ] اكتب المقارنة وأضف سطر التخطيط إلى خريطتك (15 د)\n- [ ] ✱ إضافي: جرّب سبع شاحنات بدل ثماني، وقل لمدير الأسطول أي شاحنة يمكن الاستغناء عنها ولماذا","notes":"المساعد بدور المعلّم فقط. أعطهم دقيقة لفتح الدفتر في Colab: الخلية 1 تنزّل الأداة والملفات (بعد نشر موقع المقرر). إن تعذّر، ارفع ملفات مجلد routing إلى Colab بجانب الدفتر، أو اعرض الدفتر من جهازك ودعهم يعملون من solver_plan_reference.csv. راقب من ينقل رقم الأداة عن نفسها (صفر تأخر) إلى جدول المقارنة: أعده إلى الخلية 4. لا تكشف القواعد الأربع قبل الخطوة 4.","minutes":null,"lo":[]},{"id":"four-rules","n":19,"title":"أربع قواعد في ملاحظات المرسِل","kind":"content","session":1,"hash":"2bd6ad99","md":"#### [day1#four-rules] أربع قواعد في ملاحظات المرسِل\n\n*مراجعة المختبر 1.1*\n\n| القاعدة | كم تمس | من أين يعرفها النموذج؟ |\n| --- | --- | --- |\n| البقالة المبرّدة على الشاحنة المبرّدة V8 فقط | 14 طلبًا | عمود في الملف، لم يُقرأ |\n| الأثاث على V2، حيث المساعد | 6 طلبات | عمود في الملف، لم يُقرأ |\n| الأبراج: 15 دقيقة لا 5 | 18 طلبًا | في رأس المرسِل |\n| راحة 30 دقيقة تبدأ بين الدقيقتين 210 و270 | كل سائق | في رأس المرسِل |","notes":"مراجعة المختبر 1.1: اطلب من القاعة القواعد قبل أن تعرض الجدول. الرابعة قاعدة عن السائق لا عن الطلب: الصلاة والطعام. هي التي يسهل نسيانها في أي نموذج.","minutes":null,"lo":["LO2"]},{"id":"what-it-costs","n":20,"title":"أقصر بـ 37%، و20 طلبًا في الشاحنة الخطأ","kind":"content","session":1,"hash":"3ee9b964","md":"#### [day1#what-it-costs] أقصر بـ 37%، و20 طلبًا في الشاحنة الخطأ\n\n*مراجعة المختبر 1.1 · ثمن القاعدة الناقصة*\n\n| بقواعد المرسِل الأربع | خطة عايد | الأداة: التشغيل الأول | الأداة: بعد ثلاث قواعد |\n| --- | --- | --- | --- |\n| الكيلومترات | 565.0 | 357.2 | 450.5 |\n| طلبات متأخرة (دقائق) | 3 (84) | 4 (23) | 1 (14) |\n| مبرّد في شاحنة عادية | 0 | 14 | 0 |\n| أثاث بلا مساعد | 0 | 6 | 0 |\n\n> **الوفر الحقيقي نحو 20%، لا 37%.** وهو وفر كبير، لكنه لا يظهر إلا بعد أن تعرف الأداة القواعد.","notes":"أرقام الحل المرجعي للمختبر 1.1. قارنها بما في جداول المشاركين: من نقل رقم الأداة عن نفسها سيجد صفر تأخر في العمود الثاني. الطلب المتأخر الأخير سببه الراحة، القاعدة التي لا يعرفها هذا النموذج. السؤال للقاعة: من يكتب قاعدة سادسة حين تظهر غدًا؟","minutes":null,"lo":["LO2"]},{"id":"s2","n":21,"title":"تنبؤ يجب أن يغلب الساذج","kind":"section","session":2,"hash":"5aae64e0","md":"#### [day1#s2] تنبؤ يجب أن يغلب الساذج\n\n*الجلسة 2*\n\n- يحسب خطَّي أساس موسميين ساذجين ويقارن بهما تنبؤًا جاهزًا\n- يقرأ الخطأ في فترة العطلات منفصلًا عن الأيام العادية\n- يكتب قاعدة ثقة تقول متى يُستخدم التنبؤ ومتى خط الأساس","notes":"الجلسة الثانية: ما نتنبأ به في النقل وخطوط الأساس (كتلة 1)، ثم مقاييس الخطأ وفتراتها (كتلة 2)، ثم التقويم والعطل وقاعدة الثقة (كتلة 3)، ثم المختبر 1.2.","minutes":null,"lo":["LO3","LO5"]},{"id":"what-we-forecast","n":22,"title":"كل خطة تبدأ برقم عن الغد","kind":"content","session":2,"hash":"3bb617b2","md":"#### [day1#what-we-forecast] كل خطة تبدأ برقم عن الغد\n\n*التنبؤ في النقل*\n\n- **الطرود والطلبات.** كم طلبًا غدًا، وفي الموسم؟ يحدد عدد السائقين والشاحنات.\n- **الرحلات.** كم راكبًا في كل ساعة؟ يحدد الجداول وعدد المركبات.\n- **زمن الوصول.** متى يصل الطلب؟ يحدد ما نعد به العميل.\n\n> **والخطأ له ثمن مختلف في كل اتجاه.** تنبؤ أقل من الواقع يعني سائقين في ورديات أطول وطلبات متأخرة. تنبؤ أعلى يعني تكلفة.","notes":"هذا من USE-FLU-103: التنبؤ نوع من مهام التعلم الآلي، والنموذج يتعلم من الماضي. الجديد هنا: كيف يختبر المدير تنبؤًا جاهزًا من مورِّد قبل أن يخطط به.","minutes":null,"lo":["LO3"]},{"id":"naive-baselines","n":23,"title":"كل تنبؤ يُقاس بخط ساذج لا يكلّف شيئًا","kind":"content","session":2,"hash":"1e52d9ce","md":"#### [day1#naive-baselines] كل تنبؤ يُقاس بخط ساذج لا يكلّف شيئًا\n\n*خطوط الأساس*\n\n| الخط | التنبؤ لليوم | يصلح حين |\n| --- | --- | --- |\n| الساذج | آخر قيمة معروفة | الغد يشبه اليوم |\n| الموسمي الساذج: الأسبوع الماضي | اليوم نفسه من الأسبوع، قبل 7 أيام | للأسبوع إيقاع ثابت |\n| الموسمي الساذج: العام الماضي | اليوم نفسه من الأسبوع، قبل 364 يومًا | للسنة إيقاع ثابت |\n\n> **إن لم يغلب التنبؤُ الخطَّ الساذج،** فأنت تدفع ثمن رقم تستطيع أن تحسبه بنفسك.","notes":"الطرق الساذجة معيار مرجعي معروف في كتب التنبؤ، وتُستخدم لتقيس بها أي طريقة أعقد. اسأل القاعة: أي خط يخطط به مكتبكم اليوم دون أن يسميه؟ غالبًا «مثل الأسبوع الماضي».\n\nالمصادر: Hyndman and Athanasopoulos, Forecasting: Principles and Practice, Some simple forecasting methods.","minutes":null,"lo":["LO3"]},{"id":"public-trip-records","n":24,"title":"سجلات رحلات عامة، يومًا يومًا، عبر موسمَي عطلات","kind":"content","session":2,"hash":"3b3c77d3","md":"#### [day1#public-trip-records] سجلات رحلات عامة، يومًا يومًا، عبر موسمَي عطلات\n\n*بيانات المختبر*\n\n- رحلات سيارات الأجرة المبلَّغ عنها في شيكاغو، من بوابة بياناتها المفتوحة\n- 461 يومًا: من أكتوبر 2024 إلى 4 يناير 2026\n- العطلات أمريكية: عيد الشكر وعيد الميلاد ورأس السنة\n\n- **لماذا ليست بيانات رَكْب؟** «موسم» عرض نتيجته على بيانات عامة. نختبره على البيانات نفسها قبل أن نعطيه بياناتنا.\n\nالمصدر: بوابة البيانات المفتوحة لمدينة شيكاغو، Taxi Trips (2024-). الأعداد حقيقية، وتنبؤ «موسم» اصطناعي صنعه المقرر.","notes":"الأعداد حقيقية، والتنبؤ المعروض اصطناعي صنعه المقرر. البوابة تنشر الرحلات بإذن يسمح بالاستخدام المعدَّل مع إخلاء مسؤولية نضعه في ملف ATTRIBUTION. الدرس نفسه ينطبق على أي سجلات يومية: طلبات رَكْب، وركاب الحافلات، وعبور الجسور.\n\nالمصادر: City of Chicago, Taxi Trips (2024-)؛ City of Chicago data disclaimer.","minutes":null,"lo":["LO3"]},{"id":"vendor-headline","n":25,"title":"خطأ 3.2%، في ستة أسابيع بلا عطلة","kind":"content","session":2,"hash":"2c338365","md":"#### [day1#vendor-headline] خطأ 3.2%، في ستة أسابيع بلا عطلة\n\n*نشرة «موسم»*\n\n- **3.2%** خطأ «موسم» النسبي في الأيام العادية\n- **؟** خطأ «الأسبوع الماضي» في الأيام نفسها: تحسبه في المختبر\n- **؟** خطأ «العام الماضي» في الأيام نفسها: تحسبه أيضًا\n\nفي آخر النشرة: «لا يتضمن النموذج تقويمًا للعطلات في نسخته الحالية.»","notes":"رقم النشرة 3.2% على 42 يومًا من 6 أكتوبر إلى 16 نوفمبر 2025. لا تعطِ رقمي الخطين: يحسبهما المشاركون في الخطوات 2 إلى 4 من المختبر (للمدرّب: 6.0% و8.4%). «موسم» يغلب الخطين في هذه الأيام، وهذا صحيح وليس خدعة. السؤال: ماذا عن الأيام التي نشتري التنبؤ من أجلها؟","minutes":null,"lo":["LO3"]},{"id":"mae-and-mape","n":26,"title":"كم رحلة أخطأنا، وكم في المئة","kind":"content","session":2,"hash":"6711bbc7","md":"#### [day1#mae-and-mape] كم رحلة أخطأنا، وكم في المئة\n\n*مقياسان للخطأ*\n\n- **متوسط الخطأ المطلق (MAE).** متوسط الفرق بالرحلات، بلا إشارة. يقرؤه مدير الأسطول مباشرة: كم سائقًا زيادة أو نقصًا.\n- **متوسط الخطأ النسبي (MAPE).** متوسط الفرق مقسومًا على الفعلي. يقارن بين أيام وأماكن بأحجام مختلفة، ويتضخم حين يصغر الفعلي.\n\n> **المقياس لا يكفي وحده:** اسأل دائمًا عن الأيام التي حُسب عليها.","notes":"لا تدخل في المقاييس الأخرى. يكفي أن يعرفوا أن الخطأ النسبي يعاقب الأيام الصغيرة: في عيد الميلاد الفعلي 5,220 رحلة فقط، فأي خطأ فيه يكبر نسبيًا. لذلك نقرأ المقياسين معًا.\n\nالمصادر: Hyndman and Athanasopoulos, Forecasting: Principles and Practice, Evaluating point forecast accuracy.","minutes":null,"lo":["LO3"]},{"id":"check-error-period","n":27,"title":"أي رقم تطلب من المورِّد؟","kind":"quiz","session":2,"hash":"ce4f63c5","md":"#### [day1#check-error-period] أي رقم تطلب من المورِّد؟\n\n*نقطة تحقق*\n\n**سؤال:** تشتري تنبؤًا لتخطط عدد السائقين في موسم العيد. المورِّد يعرض خطأ 3.2% على ستة أسابيع من الخريف. ما الذي تطلبه قبل أن تقرر؟\n\n- أ. الخطأ نفسه بمقياس آخر غير الخطأ النسبي\n- ب. الخطأ على سنة كاملة بدل ستة أسابيع\n- ج. شهادة بأن الرقم حُسب حسابًا صحيحًا\n- د. الخطأ على موسم عيد سابق مع خطَّي الأساس","notes":"الإجابة: د. إن اختار كثيرون «ب» فقل: سنة كاملة فيها نحو عشرين يوم عطلة من 365؛ متوسطها يشبه الأيام العادية.","minutes":null,"lo":["LO3"]},{"id":"hijri-holidays","n":28,"title":"أعيادنا تتقدم نحو أحد عشر يومًا كل عام","kind":"content","session":2,"hash":"2906c9cf","md":"#### [day1#hijri-holidays] أعيادنا تتقدم نحو أحد عشر يومًا كل عام\n\n*عندنا*\n\n- العيدان ورمضان بالتقويم الهجري، والتخطيط بالميلادي\n- «اليوم نفسه قبل 364 يومًا» يقع بعيدًا عن العيد\n- المطلوب خط أساس بتقويم: **العيد نفسه** في العام الماضي\n- ومثله: بداية الدراسة، والمواسم، والفعاليات الكبرى\n\n- **سؤال للمورِّد.** هل في نموذجكم تقويم هجري؟ أرونا خطأه في رمضان والعيدين في العامين الماضيين، مقابل خط العيد نفسه.","notes":"السنة الهجرية أقصر من الميلادية بنحو أحد عشر يومًا، فيتقدم العيد في التقويم الميلادي كل عام. لا تذكر تواريخ أعياد قادمة على الشريحة. في الإضافي من المختبر يبنون خط «العطلة نفسها» لعيد الميلاد، وهو الفكرة نفسها.","minutes":null,"lo":["LO3"]},{"id":"trust-rule","n":29,"title":"قاعدة تقول متى نستخدم التنبؤ، ومتى الخط الساذج","kind":"content","session":2,"hash":"55ef85af","md":"#### [day1#trust-rule] قاعدة تقول متى نستخدم التنبؤ، ومتى الخط الساذج\n\n*قاعدة الثقة*\n\n1. **1 · الفترة** أيام عادية أم موسم أم عطلة؟\n2. **2 · الدليل** هل غلب التنبؤ الخط الساذج في فترة مثلها؟\n3. **3 · القرار** التنبؤ، أو الخط، أو الاثنان مع مراجعة بشرية\n\n> **هذا ما يطلبه ناتج التعلم الثالث:** جدول أخطاء وقاعدة ثقة.","notes":"مثال قاعدة مقبولة: «نستخدم موسم في الأسابيع العادية؛ في أسابيع العطلات نخطط بخط العطلة نفسها في العام الماضي حتى يغلبه موسم على موسم كامل؛ ونطلب من المورِّد تقويمًا هجريًا». القاعدة لها مالك: مازن الشعيل يراجع خطة السائقين قبل كل موسم.","minutes":null,"lo":["LO3","LO5"]},{"id":"check-trust-rule","n":30,"title":"أي قاعدة ثقة تكتب؟","kind":"quiz","session":2,"hash":"2676ff53","md":"#### [day1#check-trust-rule] أي قاعدة ثقة تكتب؟\n\n*نقطة تحقق*\n\n**سؤال:** التنبؤ يغلب «الأسبوع الماضي» في الأيام العادية، ويخسر أمام «العام الماضي» في العطلات. أي قاعدة تكتبها لتخطيط السائقين؟\n\n- أ. نستخدم التنبؤ دائمًا، فمتوسط خطئه أقل\n- ب. التنبؤ في الأيام العادية، و«العام الماضي» في العطلات\n- ج. نترك التنبؤ ونخطط كل الأيام بـ «العام الماضي» وحده\n- د. نأخذ متوسط التنبؤ والخطين كل يوم","notes":"الإجابة: ب. إن اختار أحد «د» فلا ترفضها بسرعة: المتوسط أحيانًا ينفع، لكن الدليل هنا لا يدعمه، ولم نختبره.","minutes":null,"lo":["LO3"]},{"id":"lab-1-2","n":31,"title":"«موسم» في العطلات","kind":"lab","session":2,"hash":"161175f9","md":"#### [day1#lab-1-2] «موسم» في العطلات\n\nالمختبر 1.2 · 75 دقيقة\n\nتختبر تنبؤ «موسم» الجاهز على سجلات رحلات يومية عامة مقابل خطَّي أساس، في ستة أسابيع عادية وستة من العطلات، وتكتب جدول الأخطاء وقاعدة الثقة\n\n[D1_2_forecast.html](https://sdaiaacademy.github.io/use-sec-205/labs/D1_2_forecast.html)\n\n- [ ] اقرأ نشرة المورِّد وحدد ما تقيسه وما تسكت عنه (7 د)\n- [ ] احسب خطَّي الأساس: الأسبوع الماضي والعام الماضي (15 د)\n- [ ] احسب الأخطاء المطلقة والنسبية للطرق الثلاث (15 د)\n- [ ] املأ جدول الأخطاء للفترتين العادية والعطلات (13 د)\n- [ ] اقرأ أيام العطلات يومًا يومًا: أين أخطأت كل طريقة؟ (10 د)\n- [ ] اكتب قاعدة الثقة وأضف سطر التنبؤ إلى خريطتك (15 د)\n- [ ] ✱ إضافي: ابنِ خط أساس ثالثًا يأخذ اليوم نفسه من العطلة في العام الماضي، واكتب ما يعنيه ذلك لعيد يتقدّم في التقويم الميلادي كل عام","notes":"المساعد بدور المعلّم: يشرح معادلة، ولا يملأ الجدول. الصف 372 أول يوم فيه تنبؤ. راقب من يحسب متوسطًا واحدًا للأسابيع الاثني عشر: أعده إلى عمود period. من يعمل في Orange أو KNIME يستخدم trips_daily.csv. لا يحتاج المختبر شيئًا من المختبر 1.1.","minutes":null,"lo":[]},{"id":"holiday-errors","n":32,"title":"في العطلات انقلب الترتيب","kind":"content","session":2,"hash":"18fae6be","md":"#### [day1#holiday-errors] في العطلات انقلب الترتيب\n\n*مراجعة المختبر 1.2*\n\n| البند | القيمة |\n| --- | --- |\n| «موسم» | 35.5% |\n| الأسبوع الماضي | 36.5% |\n| العام الماضي | 14.6% |\n\nالخطأ النسبي من 24 نوفمبر 2025 إلى 4 يناير 2026، 42 يومًا.\n\nرحلات شيكاغو الفعلية من بوابتها المفتوحة؛ تنبؤ «موسم» اصطناعي.","notes":"من الحل المرجعي للمختبر 1.2. بالرحلات: «موسم» 3,768، الأسبوع الماضي 4,754، العام الماضي 2,014. الخط الذي خسر في الخريف فاز في العطلات، لأنه وحده رأى عطلة من قبل. اسأل قبل أن تعرضها: من وجد الترتيب نفسه في جدوله؟","minutes":null,"lo":["LO3"]},{"id":"calendar-blind","n":33,"title":"عيد الميلاد: «موسم» توقّع 24,074 رحلة، وكانت 5,220","kind":"content","session":2,"hash":"03c8a767","md":"#### [day1#calendar-blind] عيد الميلاد: «موسم» توقّع 24,074 رحلة، وكانت 5,220\n\n*مراجعة المختبر 1.2 · نموذج بلا تقويم*\n\n| 25 ديسمبر 2025 | الرحلات | ما حدث |\n| --- | --- | --- |\n| الفعلي | 5,220 |  |\n| «موسم» | 24,074 | كرر أسابيع ديسمبر العادية |\n| العام الماضي (364 يومًا) | 11,194 | أخذ 26 ديسمبر 2024: يوم بعد العيد |\n| عيد الميلاد 2024 نفسه | 5,326 | العطلة نفسها، لا اليوم نفسه من الأسبوع |\n\nرحلات شيكاغو الفعلية من بوابتها المفتوحة؛ تنبؤ «موسم» اصطناعي.","notes":"الدرس مزدوج: النموذج بلا تقويم يخطئ في العطلة، وخط «العام الماضي» نفسه يخطئ حين تقع العطلة في يوم آخر من الأسبوع. عيد الشكر لا يواجه هذه المشكلة لأنه خميس كل عام: في 2025 كان الفعلي 9,114 والعام الماضي 7,860.\n\nانقلها إلى المملكة: عيد الميلاد انزاح يومًا واحدًا عن خط 364 يومًا فضاعف خطأه، والعيد عندنا ينزاح نحو أحد عشر يومًا كل عام. خط «العام الماضي» بالتقويم الميلادي يقع في رمضان أو العيد أو خارجهما بحسب السنة؛ الخط الذي يصلح هو «العيد نفسه» في العام الماضي. هذا السطر الثالث في قاعدة الثقة التي كتبوها.","minutes":null,"lo":["LO3"]},{"id":"wrap-up","n":34,"title":"ثلاثة أمور تبقى معك","kind":"content","session":2,"hash":"710e6970","md":"#### [day1#wrap-up] ثلاثة أمور تبقى معك\n\n*خلاصة اليوم 1*\n\n- **القواعد قبل الكيلومترات.** أداة الحل صادقة بالقواعد التي أُعطيت لها. قارن الخطتين بالقواعد نفسها.\n- **الخط الساذج أولًا.** تنبؤ لا يغلب «الأسبوع الماضي» أو «العام الماضي» في الفترة التي تهمك لا يستحق ثمنه فيها.\n- **الفترة جزء من الرقم.** خطأ بلا أيامه نصف رقم. والعطل الهجرية تتحرك.","notes":"اطلب من كل مشارك جملة واحدة: ما الذي سيسأله غدًا لمورِّد يعرض عليه أداة؟ اكتب ثلاثًا منها على اللوح.","minutes":null,"lo":[]},{"id":"next","n":35,"title":"اليوم 2: السلامة بأرقام صادقة، والأتمتة بكلمات دقيقة","kind":"content","session":2,"hash":"678b3a5a","md":"#### [day1#next] اليوم 2: السلامة بأرقام صادقة، والأتمتة بكلمات دقيقة\n\n*التالي*\n\nأحضر خريطتك بسطرَي اليوم. من لم يكمل المختبر يكتب سطره من بطاقة الحالة في use_cases_14.txt.","notes":"لا قراءة مطلوبة الليلة. من لم يسلّم بطاقة القرار التحضيرية يسلّمها صباحًا. تذكير: المختبر 2.2 دون ذكاء اصطناعي في خطواته الأربع الأولى.","minutes":null,"lo":[]}],"activities":[{"id":"check-solver-says-zero-q1","slide":"check-solver-says-zero","type":"single","prompt":"أداة حل تقترح خطة أقصر بكثير من خطة المرسِل، وتقول إن كل الطلبات في نوافذها. ما أول ما تفعله قبل أن تعتمدها؟","options":[{"key":"أ","text":"تعتمدها، فالأداة تحسب أدق من الإنسان"},{"key":"ب","text":"تقارن الكيلومترات بخطة المرسِل وتختار الأقصر"},{"key":"ج","text":"تعيد قيادة الخطتين بقواعد المرسِل ثم تقارن"},{"key":"د","text":"تجربها يومًا كاملًا في مستودع واحد ثم تقرر"}],"correct":[2],"explanation":"الأداة صادقة بالقواعد التي أُعطيت لها. المقارنة العادلة تحكم على الخطتين بالقواعد نفسها، قبل أن يدفع أحد ثمن قاعدة ناقصة.","misconceptions":["يثق برقم الأداة عن نفسها: الصفر صحيح بالقواعد التي أُعطيت لها فقط","يقارن نتيجتين بقواعد مختلفة: رقم المرسِل بقواعده ورقم الأداة بقواعدها","","يظن أن التجربة الميدانية أول خطوة: يُكتشف الخطأ فيها على حساب البضاعة والسائقين"],"lo":["LO2"]},{"id":"check-missing-rule-q1","slide":"check-missing-rule","type":"single","prompt":"بعد إضافة ثلاث قواعد، بقي طلب واحد متأخرًا بسبب راحة السائق، وهذه النسخة من الأداة لا تعرف الراحة. ما الأنسب؟","options":[{"key":"أ","text":"تبقي الراحة على المرسِل وتطلب أداة تدعمها"},{"key":"ب","text":"تلغي الراحة في الأيام المزدحمة لتطابق الخطة"},{"key":"ج","text":"ترفض الأداة وتعود إلى الخطة اليدوية كاملة"},{"key":"د","text":"تطيل نوافذ التسليم حتى يختفي التأخر من التقرير"}],"correct":[0],"explanation":"القاعدة التي لا يعرفها النموذج تبقى على إنسان يراجع الخطة، ويُطلب من الأداة أن تعرفها قبل أن تكبر التجربة.","misconceptions":["","يضحي بقاعدة عن الإنسان لأن النموذج لا يعرفها: الراحة حق السائق وشرط سلامة","يرى في تأخر واحد سببًا لرفض الأداة كلها، مع أن وفر المسافة حقيقي بعد القواعد","يخلط بين القاعدة والهدف: إطالة النوافذ تخفي التأخر ولا تمنحه راحة"],"lo":["LO2"]},{"id":"check-error-period-q1","slide":"check-error-period","type":"single","prompt":"تشتري تنبؤًا لتخطط عدد السائقين في موسم العيد. المورِّد يعرض خطأ 3.2% على ستة أسابيع من الخريف. ما الذي تطلبه قبل أن تقرر؟","options":[{"key":"أ","text":"الخطأ نفسه بمقياس آخر غير الخطأ النسبي"},{"key":"ب","text":"الخطأ على سنة كاملة بدل ستة أسابيع"},{"key":"ج","text":"شهادة بأن الرقم حُسب حسابًا صحيحًا"},{"key":"د","text":"الخطأ على موسم عيد سابق مع خطَّي الأساس"}],"correct":[3],"explanation":"قرارك في الموسم، فالدليل يجب أن يكون في موسم، ومقارنًا بما تستطيع حسابه بنفسك.","misconceptions":["يرى أن مقياسًا أدق يحل المشكلة: المقياس الآخر على الأيام نفسها يخفي السؤال نفسه","يظن أن كثرة الأيام تكفي: سنة كاملة متوسطها يغرق أيام الموسم القليلة","يقبل الرقم إن ثبت أنه صحيح: الرقم قد يكون صحيحًا ولا يجيب عن سؤالك",""],"lo":["LO3"]},{"id":"check-trust-rule-q1","slide":"check-trust-rule","type":"single","prompt":"التنبؤ يغلب «الأسبوع الماضي» في الأيام العادية، ويخسر أمام «العام الماضي» في العطلات. أي قاعدة تكتبها لتخطيط السائقين؟","options":[{"key":"أ","text":"نستخدم التنبؤ دائمًا، فمتوسط خطئه أقل"},{"key":"ب","text":"التنبؤ في الأيام العادية، و«العام الماضي» في العطلات"},{"key":"ج","text":"نترك التنبؤ ونخطط كل الأيام بـ «العام الماضي» وحده"},{"key":"د","text":"نأخذ متوسط التنبؤ والخطين كل يوم"}],"correct":[1],"explanation":"قاعدة الثقة تتبع الدليل في كل فترة، وتبقي الباب مفتوحًا: حين يغلب التنبؤ الخط في عطلة سابقة، تتغير القاعدة.","misconceptions":["يحكم بالمتوسط العام: يُخفي الأيام التي يكون فيها الخطأ أغلى","","يرفض أداة تفوقت حيث اختُبرت: الخسارة في فترة لا تلغي الفوز في أخرى","يظن أن متوسط طريقتين أضمن: يجمع خطأ الأولى في العطلات مع خطأ الثانية في الأيام العادية"],"lo":["LO3"]}],"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":"day1.md","llms":"../llms.txt"},"tasks":[],"tools":[]},"bridge":{"allowedOrigins":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+مصدر سجلات الرحلات
+
+trips_daily.csv وtrips_daily.xlsx: عدد رحلات سيارات الأجرة في كل يوم، من مجموعة البيانات Taxi Trips (2024-) التي تنشرها مدينة شيكاغو في بوابة بياناتها المفتوحة:
+https://data.cityofchicago.org/Transportation/Taxi-Trips-2024-/ajtu-isnz
+
+الاستعلام (SoQL) الذي أنتج الأعداد اليومية:
+  select date_trunc_ymd(trip_start_timestamp) as day, count(*) as trips, sum(trip_miles) as miles group by day order by day
+
+العمود mawsim_forecast تنبؤ اصطناعي صنعه المقرر ليمثّل عرض مورِّد افتراضي، وليس من مدينة شيكاغو.
+
+This site provides applications using data that has been modified for use from its original source, www.cityofchicago.org, the official website of the City of Chicago. The City of Chicago makes no claims as to the content, accuracy, timeliness, or completeness of any of the data provided at this site. The data provided at this site is subject to change at any time. It is understood that the data provided at this site is being used at one's own risk.

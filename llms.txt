@@ -1,0 +1,31 @@
+# الذكاء الاصطناعي في التنقل والخدمات اللوجستية
+
+> اختبر أدوات التخطيط والتنبؤ والسلامة في النقل قبل أن تثق بها: قواعد لا تعرفها أداة الحل، وخطوط أساس يجب أن يغلبها التنبؤ، ومعدلات حوادث لكل كيلومتر، وادعاءات أتمتة تُقرأ بمن يقود. مقرر من أكاديمية سدايا، الرمز USE-SEC-205، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/use-sec-205/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/use-sec-205/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/use-sec-205/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 11,717 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/use-sec-205/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [اليوم 1: خطة على الطريق وتنبؤ بالموسم](https://sdaiaacademy.github.io/use-sec-205/slides/day1.md): تقارن خطة أداة الحل بخطة المرسِل بقواعده هو، ثم تختبر تنبؤًا بالطلب في العطلات مقابل خطوط أساس ساذجة؛ الجلسات: أداة الحل لا تعرف ما يعرفه المرسِل، تنبؤ يجب أن يغلب الساذج؛ الصفحة: https://sdaiaacademy.github.io/use-sec-205/slides/day1.html؛ نحو 5,235 من الوحدات النصية
+- [اليوم 2: السلامة بأرقام صادقة، والأتمتة بكلمات دقيقة](https://sdaiaacademy.github.io/use-sec-205/slides/day2.md): تحسب معدلات الحوادث لكل مليون كيلومتر وتختبر ادعاء كاميرا بمجموعة مقارِنة، ثم تضع ثمانية ادعاءات على مستويات الأتمتة وتفتح خريطتك؛ الجلسات: المعدل قبل أي ادعاء سلامة، من يقود؟ ثم الخريطة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-205/slides/day2.html؛ نحو 4,430 من الوحدات النصية
+- [المناقشة الختامية: خريطة الفرص والمخاطر أمام لجنة السلامة](https://sdaiaacademy.github.io/use-sec-205/slides/capstone.md): فحص فردي دون ذكاء اصطناعي، ثم سبع دقائق تعرض فيها خريطتك ومشروعك التجريبي، وخمس دقائق تعيد فيها تقييم حالة تختارها اللجنة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-205/slides/capstone.html؛ نحو 1,449 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: أداة الحل مقابل خطة المرسِل](https://sdaiaacademy.github.io/use-sec-205/labs/D1_1_routing.md): اليوم 1، الجلسة 1، 75 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-205/labs/D1_1_routing.html
+- [المختبر 1.2: «موسم» في العطلات](https://sdaiaacademy.github.io/use-sec-205/labs/D1_2_forecast.md): اليوم 1، الجلسة 2، 75 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-205/labs/D1_2_forecast.html
+- [المختبر 2.1: حوادث رَكْب وادعاء «يَقِظ»](https://sdaiaacademy.github.io/use-sec-205/labs/D2_1_incidents.md): اليوم 2، الجلسة 1، 75 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-205/labs/D2_1_incidents.html
+- [المختبر 2.2: ثمانية ادعاءات، ثم الخريطة](https://sdaiaacademy.github.io/use-sec-205/labs/D2_2_claims_and_map.md): اليوم 2، الجلسة 2، 75 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-205/labs/D2_2_claims_and_map.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/use-sec-205/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 11,717 من الوحدات النصية
+- [context/day1.md](https://sdaiaacademy.github.io/use-sec-205/context/day1.md): اليوم 1، نحو 5,235 من الوحدات النصية
+- [context/day2.md](https://sdaiaacademy.github.io/use-sec-205/context/day2.md): اليوم 2، نحو 4,430 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/use-sec-205/context/capstone.md): المناقشة الختامية، نحو 1,449 من الوحدات النصية

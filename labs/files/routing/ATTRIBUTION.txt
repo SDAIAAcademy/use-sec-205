@@ -1,0 +1,7 @@
+مصدر المسافات والأزمنة
+
+distance_m.csv وduration_s.csv وsnapped_points.csv محسوبة مرة واحدة من خدمة الجداول في خادم العرض العام لـ OSRM (router.project-osrm.org) على بيانات OpenStreetMap.
+
+Map data © OpenStreetMap contributors. Available under the Open Database License (ODbL): https://www.openstreetmap.org/copyright
+هذه الملفات قاعدة بيانات مشتقة من بيانات OpenStreetMap، وتُتاح بشروط الرخصة نفسها (ODbL 1.0).
+الأزمنة أزمنة قيادة بلا ازدحام، والنقاط مواقع عشوائية لا عناوين حقيقية.
