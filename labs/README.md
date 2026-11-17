@@ -17,7 +17,7 @@
 
 ## العمل التحضيري
 
-نحو ساعتين قبل اليوم الأول: `files/prework/prework_guide.txt` و`files/prework/decision_card.xlsx`. بطاقة لقرار تخطيط أو
+نحو ساعة قبل اليوم الأول: `files/prework/prework_guide.txt` و`files/prework/decision_card.xlsx`. بطاقة لقرار تخطيط أو
 سلامة واحد وبياناته، يفتحها المدرّب قبل الجلسة الأولى، وتُستخدم في الخطوة الأولى من المختبر 1.1. من لا يعمل في جهة نقل
 الآن يختار قرارًا من `files/prework/rakb_profile.txt`.
 
