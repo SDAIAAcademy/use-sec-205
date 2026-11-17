@@ -39,12 +39,12 @@ OUT.mkdir(parents=True, exist_ok=True)
 ids = ["D0"] + [f"S{i:03d}" for i in range(1, n)]
 for name, m in (("distance_m.csv", dist), ("duration_s.csv", dur)):
     with open(OUT / name, "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")
         w.writerow(["from"] + ids)
         for i in range(n):
             w.writerow([ids[i]] + m[i])
 with open(OUT / "snapped_points.csv", "w", newline="", encoding="utf-8") as f:
-    w = csv.writer(f)
+    w = csv.writer(f, lineterminator="\n")
     w.writerow(["id", "lat", "lon", "snap_m"])
     for i, d in enumerate(snapped):
         w.writerow([ids[i], round(d["location"][1], 5), round(d["location"][0], 5), round(d["distance"])])

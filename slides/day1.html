@@ -1,90 +1,418 @@
 <section class="slide title" id="title" data-auto="title">
-  <aside class="notes">REPLACE: الترحيب، والتعريف بنفسك، وسؤال للقاعة يضبط الإيقاع، وإيقاع اليوم</aside>
+  <aside class="notes"><p>رحّب بالمشاركين وعرّف بنفسك. سؤال برفع اليد يضبط الإيقاع: من وقّع على شراء أداة تخطيط أو تنبؤ أو مراقبة في النقل، أو أوصى بها؟ من سأل مورِّدًا: مقابل ماذا قستم هذا الرقم؟ من رأى رقم سلامة لم يُذكر معه عدد الكيلومترات؟</p><p>اليوم جلستان طويلتان: في كل منهما نحو 75 دقيقة من المفاهيم بثلاث كتل، ثم مختبر مدته 75 دقيقة. الاستراحات بزر B، وليست شرائح.</p></aside>
 </section>
 
-<section class="slide" id="agenda" data-auto="agenda"></section>
+<section class="slide" id="agenda" data-auto="agenda">
+  <aside class="notes"><p>جلستان اليوم: أداة الحل مقابل خطة المرسِل صباحًا، ثم تنبؤ بالطلب في العطلات. غدًا: معدلات الحوادث، ثم مستويات الأتمتة والخريطة.</p></aside>
+</section>
+
+<section class="slide" id="course-at-a-glance" data-label="المقرر">
+  <div class="kicker">المقرر في لمحة</div>
+  <h2>يومان من المختبرات، ثم خريطة تدافع عنها</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>اليوم 1 · خطة وتنبؤ</h4><p class="small">أداة الحل مقابل المرسِل، ثم تنبؤ بالطلب مقابل خطوط أساس ساذجة.</p><span class="pill c-teal">جدول المقارنة وقاعدة الثقة</span></div>
+    <div class="card c-coral"><h4>اليوم 2 · سلامة وأتمتة</h4><p class="small">معدلات الحوادث لكل مليون كيلومتر، ثم ثمانية ادعاءات على مستويات الأتمتة.</p><span class="pill c-coral">مذكرة اللجنة وجدول الادعاءات</span></div>
+    <div class="card c-purple"><h4>المناقشة الختامية</h4><p class="small">فحص فردي دون ذكاء اصطناعي، ثم خريطتك أمام لجنة سلامة في جلسة محاكاة.</p><span class="pill c-purple">الخريطة ومشروع تجريبي واحد</span></div>
+  </div>
+  <div class="callout tip mt"><b>الخريطة تبدأ اليوم.</b> آخر خطوة في كل مختبر تضيف سطرًا إليها، فتصل إلى المناقشة الختامية بأربعة أسطر جاهزة.</div>
+  <aside class="notes"><p>المقرر لمن يخطط الشبكات ويدير الأساطيل ويُسأل عن السلامة المرورية، لا لمن يبني النماذج. نفترض ما تعلّموه في <span class="en">USE-FLU-103</span>: المعدل الأساسي، وتغيّر البيانات، ومساءلة ادعاء المورِّد. ملفات السلامة الهندسية للمركبات الذاتية (حالة السلامة، وقياس زمن التولي) في <span class="en">DEV-PHY-401</span>، لا هنا.</p></aside>
+</section>
+
+<section class="slide" id="rakb-logistics" data-label="الحالة الدراسية">
+  <div class="kicker">حالة دراسية واحدة طوال المقرر</div>
+  <h2>شركة رَكْب: 200 مركبة تسلّم الطرود والبقالة في الرياض</h2>
+  <div class="cols cols-21">
+    <div class="stack">
+      <p class="lead">شركة افتراضية، لها أربعة مستودعات، ولجنة سلامتها تنظر في أربعة عروض.</p>
+      <div class="flow">
+        <div class="step c-teal"><b>أداة حل</b>تخطط المسارات</div>
+        <div class="arrow">←</div>
+        <div class="step c-cyan"><b>«موسم»</b>يتنبأ بالطلب</div>
+        <div class="arrow">←</div>
+        <div class="step c-coral"><b>«بَصَر»</b>كاميرا تراقب السائق</div>
+        <div class="arrow">←</div>
+        <div class="step c-purple"><b>مركبات ذاتية</b>في الساحة والأحياء</div>
+      </div>
+    </div>
+    <div class="card c-navy flat"><h4>من في القاعة معك</h4><p class="small mb0">ضحى الخنيني، تخطيط الشبكة. مازن الشعيل، عمليات الأسطول. أروى الزامل، قائدة السلامة ورئيسة اللجنة. عايد قطب، مشرف الإرسال. نوف المحروس، حماية البيانات. حمدان الصقري، ممثل السائقين.</p></div>
+  </div>
+  <aside class="notes"><p>كل الأسماء والجهات افتراضية. البيانات: الطلبات والأسطول والحوادث اصطناعية ومولَّدة ببذرة ثابتة؛ المسافات من طرق حقيقية في OpenStreetMap؛ سجلات الرحلات في الجلسة الثانية عامة من مدينة شيكاغو. اسأل: من منكم يجلس في مقعد أحد هؤلاء الستة في جهته؟</p></aside>
+</section>
+
+<section class="slide" id="ai-policy" data-label="سياسة الذكاء الاصطناعي">
+  <div class="kicker">كيف نستخدم الذكاء الاصطناعي هنا</div>
+  <h2>ثلاث قواعد، بحسب ما يقيسه كل نشاط</h2>
+  <table class="t">
+    <tr><th>النشاط</th><th>القاعدة</th><th>لماذا</th></tr>
+    <tr><td>الفحص الفردي، ووضع الادعاءات على المستويات في المختبر 2.2</td><td><b>دون ذكاء اصطناعي</b></td><td>قراءة الادعاء والحكم فيه مهارتك أنت</td></tr>
+    <tr><td>المختبرات 1.1 و1.2 و2.1</td><td><b>مساعد بدور المعلّم</b></td><td>يشرح خلية أو معادلة، والمقارنة والحكم لك</td></tr>
+    <tr><td>الخريطة</td><td><b>مسموح كاملًا</b></td><td>تدافع عنها حيًّا، وتعيد تقييم حالة تختارها اللجنة</td></tr>
+  </table>
+  <div class="callout warn mt"><b>لا بيانات حقيقية من جهتك في أي مساعد عام.</b> لا مواقع سائقين ولا عملاء ولا لوحات. ملفات المقرر اصطناعية أو عامة، وتكفي لكل خطوة.</div>
+  <aside class="notes"><p>هذه السياسة من وصف المقرر، لا من اختيار المدرب. قلها بوضوح الآن، وكررها قبل المختبر 2.2.</p></aside>
+</section>
 
 <!-- الجلسة 1 -->
 
-<section class="slide section" id="s1" data-auto="section" data-session="1"></section>
-
-<section class="slide" id="s1-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
-  </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+<section class="slide section" id="s1" data-auto="section" data-session="1">
+  <aside class="notes"><p>الجلسة الأولى: نحو 75 دقيقة من المفاهيم بثلاث كتل (أين الذكاء الاصطناعي في النقل، ما تفعله أداة الحل، ما لا تعرفه)، ثم المختبر 1.1.</p></aside>
 </section>
 
-<section class="slide" id="s1-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="uses-in-mobility" data-lo="LO5">
+  <div class="kicker">أين يعمل الذكاء الاصطناعي في النقل</div>
+  <h2>أربعة استخدامات، ولكل منها سؤال مختلف</h2>
+  <div class="cols cols-4 gap-s">
+    <div class="card c-teal"><h4>التخطيط والإرسال</h4><p class="small mb0">من يأخذ أي طلب، وبأي ترتيب. السؤال: <b>هل تعرف الأداة قواعدنا؟</b></p></div>
+    <div class="card c-cyan"><h4>التنبؤ بالرحلات والطرود</h4><p class="small mb0">كم طلبًا غدًا، وفي الموسم. السؤال: <b>هل يغلب الساذج؟</b></p></div>
+    <div class="card c-coral"><h4>المعلوماتية عن بعد ومراقبة السائق</h4><p class="small mb0">سرعة وكبح وانتباه. السؤال: <b>لكل كم كيلومتر؟ وما الذي يُجمع عن الإنسان؟</b></p></div>
+    <div class="card c-purple"><h4>إدارة المرور والنقاط الساخنة</h4><p class="small mb0">أين تقع الحوادث. السؤال: <b>أخطر، أم أكثر مرورًا؟</b></p></div>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <aside class="notes"><p>اربط كل استخدام بمختبر: التخطيط الآن، والتنبؤ بعد الظهر، والمعلوماتية والنقاط الساخنة صباح الغد، والأتمتة بعد ظهر الغد. لا يلزم أن يعرف أحد كيف يعمل النموذج من الداخل: الأسئلة الأربعة أسئلة مدير.</p></aside>
+</section>
+
+<section class="slide" id="prework-decisions" data-lo="LO5">
+  <div class="kicker">ماذا وجدتم في بطاقاتكم</div>
+  <h2>كل قرار تخطيط فيه قيد لا يظهر في أي ملف</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>سائق لا يدخل حيًّا معينًا</li>
+      <li>رصيف تحميل يُغلق في جزء من اليوم</li>
+      <li>عميل لا يستلم إلا من شخص يعرفه</li>
+      <li>شاحنة لا تصلح لنوع من البضاعة</li>
+    </ul>
+    <div class="card c-navy flat"><h4>سؤال من البطاقة</h4><p class="small mb0">ما القيد الذي يعرفه صاحب القرار ولا يظهر في أي ملف؟ هذا السؤال هو المختبر 1.1 كله.</p></div>
+  </div>
+  <aside class="notes"><p>افتح البطاقات التي سلّموها قبل الورشة (العمل التحضيري، نحو ساعتين). اقرأ ثلاث إجابات عن السؤال الرابع دون أسماء جهاتهم. من لم يسلّم بطاقته يختار قرارًا من ملف رَكْب التعريفي ويكمل بطاقته مساءً.</p></aside>
+</section>
+
+<section class="slide" id="optimise-vs-predict" data-lo="LO2">
+  <div class="kicker">نوعان من الأدوات</div>
+  <h2>أداة تختار خطة، وأداة تقدّر رقمًا</h2>
+  <table class="t">
+    <tr><th></th><th>التحسين (optimisation)</th><th>التنبؤ (prediction)</th></tr>
+    <tr><td>ما تخرجه</td><td>خطة: من يذهب إلى أين وبأي ترتيب</td><td>رقم: كم طلبًا غدًا، وكم دقيقة للوصول</td></tr>
+    <tr><td>ما تحتاجه</td><td><b>هدف وقيود</b> مكتوبة</td><td><b>بيانات ماضية</b> تشبه المستقبل</td></tr>
+    <tr><td>كيف تخطئ</td><td>تلتزم بقيود ناقصة التزامًا تامًا</td><td>تكرر الماضي حين يتغير</td></tr>
+    <tr class="hl"><td>ما تسأله</td><td>هل تعرف قواعدنا؟</td><td>هل تغلب خطًا ساذجًا؟</td></tr>
+  </table>
+  <aside class="notes"><p>كثير من العروض تمزج الاثنين: تنبؤ بالطلب يغذي أداة تخطيط. لكن الخطأين مختلفان: أداة الحل لا تتعلم من البيانات، بل تبحث عن أفضل خطة بالقواعد التي أعطيناها. إن نقصت القواعد، جاءت الخطة «مثالية» لعالم غير عالمنا.</p></aside>
+</section>
+
+<section class="slide" id="vrp-in-one-slide" data-lo="LO2">
+  <div class="kicker">مسألة تخطيط مسارات المركبات</div>
+  <h2>المسألة: مستودع، وطلبات، وشاحنات، وقيود</h2>
+  <div class="cols cols-2 mid">
+    <ul class="bullets">
+      <li><b>المدخلات:</b> مواقع الطلبات، والمسافة والزمن بين كل نقطتين</li>
+      <li><b>السعة:</b> صناديق كل شاحنة</li>
+      <li><b>النوافذ الزمنية:</b> متى يُقبل التسليم</li>
+      <li><b>زمن الخدمة:</b> دقائق التوقف عند كل طلب</li>
+      <li><b>الهدف:</b> أقصر مسافة، أو أقل شاحنات</li>
+    </ul>
+    <div class="card c-teal"><h4>في رَكْب</h4><p class="small mb0">120 طلبًا، وثماني شاحنات سعة كل منها 40 صندوقًا، ووردية من 480 دقيقة. المسافات من طرق الرياض في OpenStreetMap.</p></div>
+  </div>
+  <aside class="notes"><p>اسم المسألة بالإنجليزية <span class="en">Vehicle Routing Problem with Time Windows</span>. أدوات الحل المفتوحة تحلها: <span class="en">OR-Tools</span> من Google و<span class="en">VROOM</span> مثالان قابلان للتبديل. لا تشرح الخوارزمية: الأداة تجرب ترتيبات كثيرة وتحتفظ بالأفضل وفق الهدف.</p><p>المصادر: Google OR-Tools، Vehicle Routing Problem with Time Windows.</p></aside>
+</section>
+
+<section class="slide" id="open-map-data" data-lo="LO2">
+  <div class="kicker">من أين تأتي المسافات</div>
+  <h2>الخريطة المفتوحة تعطي مسافة الطريق، لا خط الطيران</h2>
+  <div class="cols cols-3">
+    <div class="stat center"><div class="big">121 × 121</div><div class="lbl">مسافة وزمنًا بين المستودع وكل طلب</div></div>
+    <div class="stat center"><div class="big">11.1 كم</div><div class="lbl">متوسط المسافة على الطرق بين نقطتين</div></div>
+    <div class="stat center"><div class="big">12 دقيقة</div><div class="lbl">متوسط زمن القيادة بينهما، بلا ازدحام</div></div>
+  </div>
+  <div class="callout warn mt"><b>الزمن بلا ازدحام.</b> الخريطة لا تعرف ساعة الذروة. هذا قيد آخر يعرفه المرسِل ولا يعرفه الملف.</div>
+  <aside class="notes"><p>حسبنا الجدولين مرة واحدة من خادم <span class="en">OSRM</span> العام على بيانات <span class="en">OpenStreetMap</span>، ونشرناهما مع المختبر بشروط رخصة <span class="en">ODbL</span>. المختبر لا يتصل بالخادم. المتوسطان من الجدولين في <code>distance_m.csv</code> و<code>duration_s.csv</code>.</p><p>المصادر: OpenStreetMap copyright and licence؛ Project OSRM.</p></aside>
+</section>
+
+<section class="slide" id="what-the-model-knows" data-lo="LO2">
+  <div class="kicker">ما يعرفه النموذج</div>
+  <h2>أداة الحل تعرف ما كُتب لها فقط</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>1 · ما في الملف</b>المواقع والصناديق والنوافذ</div>
+    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · ما في النموذج</b>السعة والنوافذ و5 دقائق لكل تسليم</div>
+    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · ما في رأس المرسِل</b>التبريد، والمساعد، والأبراج، والراحة</div>
+  </div>
+  <div class="callout tip mt frag"><b>الفجوة بين 2 و3</b> هي ما تبحث عنه في المختبر. أحيانًا تكون المعلومة في الملف، ولم يطلب أحد من النموذج أن يقرأها.</div>
+  <aside class="notes"><p>اضغط مرة لكل خطوة. في الخطوة 3 لا تكشف القواعد الأربع بالتفصيل: قل إنها في ملاحظات عايد، وإنهم سيجدونها بأنفسهم. ملف الطلبات فيه أعمدة <span class="en">cold</span> و<span class="en">lift</span> و<span class="en">tower</span>، والنموذج الأول لا يقرؤها.</p></aside>
+</section>
+
+<section class="slide" id="check-solver-says-zero" data-lo="LO2">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>الأداة تقول: صفر تأخر</h2>
+  <div class="quiz" data-type="single" data-lo="LO2">
+    <p class="lead">أداة حل تقترح خطة أقصر بـ 37% من خطة المرسِل، وتقول إن كل الطلبات في نوافذها. ما أول ما تفعله قبل أن تعتمدها؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يثق برقم الأداة عن نفسها: الصفر صحيح بالقواعد التي أُعطيت لها فقط">تعتمدها، فالأداة تحسب أدق من الإنسان</div>
+      <div class="opt" data-why="يقارن نتيجتين بقواعد مختلفة: رقم المرسِل بقواعده ورقم الأداة بقواعدها">تقارن الكيلومترات بخطة المرسِل وتختار الأقصر</div>
+      <div class="opt" data-ok>تعيد قيادة الخطتين بقواعد المرسِل كلها ثم تقارن</div>
+      <div class="opt" data-why="يظن أن التجربة الميدانية أول خطوة: يُكتشف الخطأ فيها على حساب البضاعة والسائقين">تجربها يومًا كاملًا في مستودع واحد</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> الأداة صادقة بالقواعد التي أُعطيت لها. المقارنة العادلة تحكم على الخطتين بالقواعد نفسها، قبل أن يدفع أحد ثمن قاعدة ناقصة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. الـ 37% من المختبر: 357.2 كم مقابل 565.0 كم. لا تكشف ما يحدث بعد إعادة القيادة. إن اختار كثيرون «د» فقل: التجربة الميدانية مهمة، لكنها بعد الفحص المكتبي لا بدلًا منه.</p></aside>
+</section>
+
+<section class="slide" id="replay-not-trust" data-lo="LO2">
+  <div class="kicker">المقارنة العادلة</div>
+  <h2>أعد قيادة كل خطة بالقواعد نفسها</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal flat"><h4>إعادة القيادة (replay)</h4><p class="small mb0">كل شاحنة تخرج في الدقيقة 0، وتسير بأزمنة الخريطة، وتنتظر إن وصلت مبكرًا، وتأخذ راحتها، وتعود. نحسب ما يحدث فعلًا.</p></div>
+    <div class="card c-coral flat"><h4>ما نعدّه</h4><p class="small mb0">الكيلومترات، والطلبات المتأخرة ودقائقها، والشاحنات التي تعود بعد الوردية، وكل طلب في شاحنة لا تصلح له.</p></div>
+  </div>
+  <div class="callout note mt"><b>هذا ما يطلبه ناتج التعلم الثاني:</b> مقارنة المسافة والتأخر تسمّي القيود التي أغفلتها الأداة.</div>
+  <aside class="notes"><p>في الدفتر الدالة <code>replay</code> تفعل ذلك. نشغّلها على خطة عايد وعلى خطة الأداة. المشاركون لا يكتبون كودًا: يشغّلون الخلايا ويقرؤون.</p></aside>
+</section>
+
+<section class="slide" id="manual-plan-is-data" data-lo="LO2">
+  <div class="kicker">خطة عايد</div>
+  <h2>الخطة اليدوية ليست خطأ: هي سجلّ قواعد غير مكتوبة</h2>
+  <div class="cols cols-2 mid">
+    <div class="stack">
+      <div class="stat center"><div class="big">565.0 كم</div><div class="lbl">خطة عايد، بإعادة القيادة بقواعده الأربع</div></div>
+      <div class="stat center"><div class="big">3</div><div class="lbl">طلبات متأخرة، و84 دقيقة تأخرًا مجموعة</div></div>
+    </div>
+    <ul class="bullets">
+      <li>لا بقالة مبرّدة في شاحنة عادية</li>
+      <li>لا أثاث مع سائق وحده</li>
+      <li>لا يعرف أقصر طريق، ويعرف من يغضب</li>
+    </ul>
+  </div>
+  <aside class="notes"><p>الأرقام من تشغيل الحل المرجعي للمختبر 1.1. لا تجعل عايد خصمًا: هو مصدر القواعد. المديرون في القاعة يعرفون مرسِلًا مثله. الخطة اليدوية أطول لأنه يقسّم بالاتجاه ويرتب بالنوافذ.</p></aside>
+</section>
+
+<section class="slide" id="four-rules" data-lo="LO2">
+  <div class="kicker">قيود لا يعرفها النموذج الأول</div>
+  <h2>أربع قواعد في ملاحظات المرسِل</h2>
+  <table class="t">
+    <tr><th>القاعدة</th><th>كم تمس</th><th>من أين يعرفها النموذج؟</th></tr>
+    <tr><td>البقالة المبرّدة على الشاحنة المبرّدة V8 فقط</td><td>14 طلبًا</td><td>عمود في الملف، لم يُقرأ</td></tr>
+    <tr><td>الأثاث على V2، حيث المساعد</td><td>6 طلبات</td><td>عمود في الملف، لم يُقرأ</td></tr>
+    <tr><td>الأبراج: 15 دقيقة لا 5</td><td>18 طلبًا</td><td>في رأس المرسِل</td></tr>
+    <tr><td>راحة 30 دقيقة تبدأ بين الدقيقتين 210 و270</td><td>كل سائق</td><td>في رأس المرسِل</td></tr>
+  </table>
+  <aside class="notes"><p>اعرض هذه الشريحة بعد المختبر، في المراجعة، لا قبله، إن أردت أن يكتشفها المشاركون بأنفسهم: اضغط B لتعتيم الشاشة أو تخطَّها الآن وعد إليها. الرابعة قاعدة عن السائق لا عن الطلب: الصلاة والطعام. هي التي يسهل نسيانها في أي نموذج.</p></aside>
+</section>
+
+<section class="slide" id="what-it-costs" data-lo="LO2">
+  <div class="kicker">ثمن القاعدة الناقصة</div>
+  <h2>أقصر بـ 37%، و20 طلبًا في الشاحنة الخطأ</h2>
+  <table class="t">
+    <tr><th>بقواعد المرسِل الأربع</th><th>خطة عايد</th><th>الأداة: التشغيل الأول</th><th>الأداة: بعد ثلاث قواعد</th></tr>
+    <tr><td>الكيلومترات</td><td>565.0</td><td>357.2</td><td>450.5</td></tr>
+    <tr><td>طلبات متأخرة (دقائق)</td><td>3 (84)</td><td>4 (23)</td><td>1 (14)</td></tr>
+    <tr><td>مبرّد في شاحنة عادية</td><td>0</td><td>14</td><td>0</td></tr>
+    <tr><td>أثاث بلا مساعد</td><td>0</td><td>6</td><td>0</td></tr>
+  </table>
+  <div class="callout tip mt"><b>الوفر الحقيقي نحو 20%، لا 37%.</b> وهو وفر كبير، لكنه لا يظهر إلا بعد أن تعرف الأداة القواعد.</div>
+  <aside class="notes"><p>هذه أرقام المختبر كاملة: اعرضها في مراجعة المختبر، لا قبله. الطلب المتأخر الأخير سببه الراحة، القاعدة التي لا يعرفها هذا النموذج. السؤال للقاعة: من يكتب قاعدة سادسة حين تظهر غدًا؟</p></aside>
+</section>
+
+<section class="slide" id="constraint-owner" data-lo="LO2 LO5">
+  <div class="kicker">من يملك القيود</div>
+  <h2>قبل التشغيل: سجلّ قيود له مالك</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>اكتبها</h4><p class="small mb0">كل قاعدة في رأس المرسِل تصير سطرًا: ما هي، ولماذا، وكم طلبًا تمس.</p></div>
+    <div class="card c-cyan"><h4>اختبرها</h4><p class="small mb0">أعد قيادة خطة الأداة بها كل أسبوع، لا مرة واحدة عند الشراء.</p></div>
+    <div class="card c-coral"><h4>اسمِّ مالكها</h4><p class="small mb0">المرسِل يراجع الخطة قبل خروج الشاحنات، ويستطيع أن يردّها.</p></div>
+  </div>
+  <div class="callout note mt"><b>هذا دور التولي في التخطيط:</b> من يرى الخطة قبل أن تقع، ويستطيع إيقافها.</div>
+  <aside class="notes"><p>هذا ما يدخل الخريطة في سطر الحالة U01: دور التولي هو المرسِل الذي يراجع الخطة. أثر السلامة غير مباشر: الخطة تحدد الحمل والإيقاع المطلوب من السائق. مبادئ أخلاقيات الذكاء الاصطناعي تضع المساءلة والإشراف البشري على الجهة التي تستخدم الأداة، لا على المورِّد.</p><p>المصادر: سدايا، مبادئ أخلاقيات الذكاء الاصطناعي.</p></aside>
+</section>
+
+<section class="slide" id="check-missing-rule" data-lo="LO2">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>قاعدة غير موجودة في النموذج</h2>
+  <div class="quiz" data-type="single" data-lo="LO2">
+    <p class="lead">بعد إضافة ثلاث قواعد، بقي طلب واحد متأخرًا بسبب راحة السائق، وهذه النسخة من الأداة لا تعرف الراحة. ما الأنسب؟</p>
+    <div class="opts">
+      <div class="opt" data-ok>تبقي الراحة على المرسِل وتطلب أداة تدعمها قبل التوسع</div>
+      <div class="opt" data-why="يضحي بقاعدة عن الإنسان لأن النموذج لا يعرفها: الراحة حق السائق وشرط سلامة">تلغي الراحة في الأيام المزدحمة لتطابق الخطة</div>
+      <div class="opt" data-why="يرى في تأخر واحد سببًا لرفض الأداة كلها، مع أن وفر المسافة حقيقي بعد القواعد">ترفض الأداة وتعود إلى الخطة اليدوية كاملة</div>
+      <div class="opt" data-why="يخلط بين القاعدة والهدف: إطالة النوافذ تخفي التأخر ولا تمنحه راحة">تطيل نوافذ التسليم حتى يختفي التأخر</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> القاعدة التي لا يعرفها النموذج تبقى على إنسان يراجع الخطة، ويُطلب من الأداة أن تعرفها قبل أن تكبر التجربة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: أ. أدوات حل كثيرة تدعم فترات الراحة (VROOM مثلًا)، لكن لا تذكر قدرة أداة بعينها دون أن تفتح صفحتها. إن اختار أحد «ب» فقل: هذا ما يحدث حين يصير النموذج هو القاعدة.</p></aside>
 </section>
 
 <section class="slide lab" id="lab-1-1" data-auto="lab" data-lab="1.1">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>المساعد بدور المعلّم فقط. أعطهم دقيقة لفتح الدفتر في Colab: الخلية 1 تنزّل الأداة والملفات (بعد نشر موقع المقرر). إن تعذّر، ارفع ملفات مجلد routing إلى Colab بجانب الدفتر، أو اعرض الدفتر من جهازك ودعهم يعملون من solver_plan_reference.csv. راقب من ينقل رقم الأداة عن نفسها (صفر تأخر) إلى جدول المقارنة: أعده إلى الخلية 4. لا تكشف القواعد الأربع قبل الخطوة 4.</p></aside>
 </section>
 
 <!-- الجلسة 2 -->
 
-<section class="slide section" id="s2" data-auto="section" data-session="2"></section>
-
-<section class="slide" id="s2-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
-  </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+<section class="slide section" id="s2" data-auto="section" data-session="2">
+  <aside class="notes"><p>الجلسة الثانية: ما نتنبأ به في النقل وخطوط الأساس (كتلة 1)، ثم مقاييس الخطأ وفتراتها (كتلة 2)، ثم التقويم والعطل وقاعدة الثقة (كتلة 3)، ثم المختبر 1.2.</p></aside>
 </section>
 
-<section class="slide" id="s2-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="what-we-forecast" data-lo="LO3">
+  <div class="kicker">التنبؤ في النقل</div>
+  <h2>كل خطة تبدأ برقم عن الغد</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>الطرود والطلبات</h4><p class="small mb0">كم طلبًا غدًا، وفي الموسم؟ يحدد عدد السائقين والشاحنات.</p></div>
+    <div class="card c-cyan"><h4>الرحلات</h4><p class="small mb0">كم راكبًا في كل ساعة؟ يحدد الجداول وعدد المركبات.</p></div>
+    <div class="card c-coral"><h4>زمن الوصول</h4><p class="small mb0">متى يصل الطلب؟ يحدد ما نعد به العميل.</p></div>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <div class="callout warn mt"><b>والخطأ له ثمن مختلف في كل اتجاه.</b> تنبؤ أقل من الواقع يعني سائقين في ورديات أطول وطلبات متأخرة. تنبؤ أعلى يعني تكلفة.</div>
+  <aside class="notes"><p>هذا من <span class="en">USE-FLU-103</span>: التنبؤ نوع من مهام التعلم الآلي، والنموذج يتعلم من الماضي. الجديد هنا: كيف يختبر المدير تنبؤًا جاهزًا من مورِّد قبل أن يخطط به.</p></aside>
+</section>
+
+<section class="slide" id="naive-baselines" data-lo="LO3">
+  <div class="kicker">خطوط الأساس</div>
+  <h2>كل تنبؤ يُقاس بخط ساذج لا يكلّف شيئًا</h2>
+  <table class="t">
+    <tr><th>الخط</th><th>التنبؤ لليوم</th><th>يصلح حين</th></tr>
+    <tr><td>الساذج</td><td>آخر قيمة معروفة</td><td>الغد يشبه اليوم</td></tr>
+    <tr><td>الموسمي الساذج: الأسبوع الماضي</td><td>اليوم نفسه من الأسبوع، قبل 7 أيام</td><td>للأسبوع إيقاع ثابت</td></tr>
+    <tr><td>الموسمي الساذج: العام الماضي</td><td>اليوم نفسه من الأسبوع، قبل 364 يومًا</td><td>للسنة إيقاع ثابت</td></tr>
+  </table>
+  <div class="callout tip mt"><b>إن لم يغلب التنبؤُ الخطَّ الساذج،</b> فأنت تدفع ثمن رقم تستطيع أن تحسبه بنفسك.</div>
+  <aside class="notes"><p>الطرق الساذجة معيار مرجعي معروف في كتب التنبؤ، وتُستخدم لتقيس بها أي طريقة أعقد. اسأل القاعة: أي خط يخطط به مكتبكم اليوم دون أن يسميه؟ غالبًا «مثل الأسبوع الماضي».</p><p>المصادر: Hyndman and Athanasopoulos, Forecasting: Principles and Practice, Some simple forecasting methods.</p></aside>
+</section>
+
+<section class="slide" id="public-trip-records" data-lo="LO3">
+  <div class="kicker">بيانات المختبر</div>
+  <h2>سجلات رحلات عامة، يومًا يومًا، عبر موسمَي عطلات</h2>
+  <div class="cols cols-2 mid">
+    <ul class="bullets">
+      <li>رحلات سيارات الأجرة المبلَّغ عنها في شيكاغو، من بوابة بياناتها المفتوحة</li>
+      <li>461 يومًا: من أكتوبر 2024 إلى 4 يناير 2026</li>
+      <li>العطلات أمريكية: عيد الشكر وعيد الميلاد ورأس السنة</li>
+    </ul>
+    <div class="card c-teal"><h4>لماذا ليست بيانات رَكْب؟</h4><p class="small mb0">«موسم» عرض نتيجته على بيانات عامة. نختبره على البيانات نفسها قبل أن نعطيه بياناتنا.</p></div>
+  </div>
+  <aside class="notes"><p>الأعداد حقيقية، والتنبؤ المعروض اصطناعي صنعه المقرر. البوابة تنشر الرحلات بإذن يسمح بالاستخدام المعدَّل مع إخلاء مسؤولية نضعه في ملف ATTRIBUTION. الدرس نفسه ينطبق على أي سجلات يومية: طلبات رَكْب، وركاب الحافلات، وعبور الجسور.</p><p>المصادر: City of Chicago, Taxi Trips (2024-)؛ City of Chicago data disclaimer.</p></aside>
+</section>
+
+<section class="slide" id="vendor-headline" data-lo="LO3">
+  <div class="kicker">نشرة «موسم»</div>
+  <h2>خطأ 3.2%، في ستة أسابيع بلا عطلة</h2>
+  <div class="cols cols-3">
+    <div class="stat center"><div class="big">3.2%</div><div class="lbl">خطأ «موسم» النسبي في الأيام العادية</div></div>
+    <div class="stat center"><div class="big">6.0%</div><div class="lbl">خطأ «الأسبوع الماضي» في الأيام نفسها</div></div>
+    <div class="stat center"><div class="big">8.4%</div><div class="lbl">خطأ «العام الماضي» في الأيام نفسها</div></div>
+  </div>
+  <p class="lead mt">في آخر النشرة: «لا يتضمن النموذج تقويمًا للعطلات في نسخته الحالية.»</p>
+  <aside class="notes"><p>الأرقام من الحل المرجعي للمختبر 1.2، 42 يومًا من 6 أكتوبر إلى 16 نوفمبر 2025. «موسم» يغلب الخطين في هذه الأيام، وهذا صحيح وليس خدعة. السؤال: ماذا عن الأيام التي نشتري التنبؤ من أجلها؟</p></aside>
+</section>
+
+<section class="slide" id="mae-and-mape" data-lo="LO3">
+  <div class="kicker">مقياسان للخطأ</div>
+  <h2>كم رحلة أخطأنا، وكم في المئة</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal flat"><h4>متوسط الخطأ المطلق (MAE)</h4><p class="small mb0">متوسط الفرق بالرحلات، بلا إشارة. يقرؤه مدير الأسطول مباشرة: كم سائقًا زيادة أو نقصًا.</p></div>
+    <div class="card c-coral flat"><h4>متوسط الخطأ النسبي (MAPE)</h4><p class="small mb0">متوسط الفرق مقسومًا على الفعلي. يقارن بين أيام وأماكن بأحجام مختلفة، ويتضخم حين يصغر الفعلي.</p></div>
+  </div>
+  <div class="callout warn mt"><b>المقياس لا يكفي وحده:</b> اسأل دائمًا عن الأيام التي حُسب عليها.</div>
+  <aside class="notes"><p>لا تدخل في المقاييس الأخرى. يكفي أن يعرفوا أن الخطأ النسبي يعاقب الأيام الصغيرة: في عيد الميلاد الفعلي 5,220 رحلة فقط، فأي خطأ فيه يكبر نسبيًا. لذلك نقرأ المقياسين معًا.</p><p>المصادر: Hyndman and Athanasopoulos, Forecasting: Principles and Practice, Evaluating point forecast accuracy.</p></aside>
+</section>
+
+<section class="slide" id="check-error-period" data-lo="LO3">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي رقم تطلب من المورِّد؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3">
+    <p class="lead">تشتري تنبؤًا لتخطط عدد السائقين في موسم العيد. المورِّد يعرض خطأ 3.2% على ستة أسابيع من الخريف. ما الذي تطلبه قبل أن تقرر؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يرى أن مقياسًا أدق يحل المشكلة: المقياس الآخر على الأيام نفسها يخفي السؤال نفسه">الخطأ نفسه بمقياس آخر غير النسبي</div>
+      <div class="opt" data-why="يظن أن كثرة الأيام تكفي: سنة كاملة متوسطها يغرق أيام الموسم القليلة">الخطأ على سنة كاملة بدل ستة أسابيع</div>
+      <div class="opt" data-why="يقبل الرقم إن ثبت أنه صحيح: الرقم قد يكون صحيحًا ولا يجيب عن سؤالك">شهادة بأن الرقم حُسب حسابًا صحيحًا</div>
+      <div class="opt" data-ok>الخطأ على موسم عيد سابق، مع خطَّي الأساس فيه</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> قرارك في الموسم، فالدليل يجب أن يكون في موسم، ومقارنًا بما تستطيع حسابه بنفسك.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: د. إن اختار كثيرون «ب» فقل: سنة كاملة فيها نحو عشرين يوم عطلة من 365؛ متوسطها يشبه الأيام العادية.</p></aside>
+</section>
+
+<section class="slide" id="holiday-errors" data-lo="LO3">
+  <div class="kicker">ستة أسابيع من العطلات</div>
+  <h2>في العطلات انقلب الترتيب</h2>
+  <div class="bars">
+    <div class="row"><span>«موسم»</span><div class="bar c-coral" style="--w:97%"></div><span class="val">35.5%</span></div>
+    <div class="row"><span>الأسبوع الماضي</span><div class="bar c-amber" style="--w:100%"></div><span class="val">36.5%</span></div>
+    <div class="row"><span>العام الماضي</span><div class="bar c-teal" style="--w:40%"></div><span class="val">14.6%</span></div>
+  </div>
+  <p class="lead mt">الخطأ النسبي من 24 نوفمبر 2025 إلى 4 يناير 2026، 42 يومًا.</p>
+  <aside class="notes"><p>من الحل المرجعي للمختبر 1.2. بالرحلات: «موسم» 3,768، الأسبوع الماضي 4,754، العام الماضي 2,014. الخط الذي خسر في الخريف فاز في العطلات، لأنه وحده رأى عطلة من قبل. لا تعرض هذه الشريحة قبل المختبر إن أردت أن يكتشفوها: يمكنك العودة إليها في المراجعة.</p></aside>
+</section>
+
+<section class="slide" id="calendar-blind" data-lo="LO3">
+  <div class="kicker">نموذج بلا تقويم</div>
+  <h2>عيد الميلاد: «موسم» توقّع 24,074 رحلة، وكانت 5,220</h2>
+  <table class="t">
+    <tr><th>25 ديسمبر 2025</th><th>الرحلات</th><th>ما حدث</th></tr>
+    <tr><td>الفعلي</td><td>5,220</td><td></td></tr>
+    <tr><td>«موسم»</td><td>24,074</td><td>كرر أسابيع ديسمبر العادية</td></tr>
+    <tr><td>العام الماضي (364 يومًا)</td><td>11,194</td><td>أخذ 26 ديسمبر 2024: يوم بعد العيد</td></tr>
+    <tr class="hl"><td>عيد الميلاد 2024 نفسه</td><td>5,326</td><td>العطلة نفسها، لا اليوم نفسه من الأسبوع</td></tr>
+  </table>
+  <aside class="notes"><p>الدرس مزدوج: النموذج بلا تقويم يخطئ في العطلة، وخط «العام الماضي» نفسه يخطئ حين تقع العطلة في يوم آخر من الأسبوع. عيد الشكر لا يواجه هذه المشكلة لأنه خميس كل عام: في 2025 كان الفعلي 9,114 والعام الماضي 7,860.</p></aside>
+</section>
+
+<section class="slide" id="hijri-holidays" data-lo="LO3">
+  <div class="kicker">عندنا</div>
+  <h2>أعيادنا تتقدم نحو أحد عشر يومًا كل عام</h2>
+  <div class="cols cols-2 mid">
+    <ul class="bullets">
+      <li>العيدان ورمضان بالتقويم الهجري، والتخطيط بالميلادي</li>
+      <li>«اليوم نفسه قبل 364 يومًا» يقع بعيدًا عن العيد</li>
+      <li>المطلوب خط أساس بتقويم: <b>العيد نفسه</b> في العام الماضي</li>
+      <li>ومثله: بداية الدراسة، والمواسم، والفعاليات الكبرى</li>
+    </ul>
+    <div class="card c-teal"><h4>سؤال للمورِّد</h4><p class="small mb0">هل في نموذجكم تقويم هجري؟ أرونا خطأه في رمضان والعيدين في العامين الماضيين، مقابل خط العيد نفسه.</p></div>
+  </div>
+  <aside class="notes"><p>السنة الهجرية أقصر من الميلادية بنحو أحد عشر يومًا، فيتقدم العيد في التقويم الميلادي كل عام. لا تذكر تواريخ أعياد قادمة على الشريحة. في الإضافي من المختبر يبنون خط «العطلة نفسها» لعيد الميلاد، وهو الفكرة نفسها.</p></aside>
+</section>
+
+<section class="slide" id="trust-rule" data-lo="LO3 LO5">
+  <div class="kicker">قاعدة الثقة</div>
+  <h2>قاعدة تقول متى نستخدم التنبؤ، ومتى الخط الساذج</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>1 · الفترة</b>أيام عادية أم موسم أم عطلة؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>2 · الدليل</b>هل غلب التنبؤ الخط الساذج في فترة مثلها؟</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>3 · القرار</b>التنبؤ، أو الخط، أو الاثنان مع مراجعة بشرية</div>
+  </div>
+  <div class="callout note mt"><b>هذا ما يطلبه ناتج التعلم الثالث:</b> جدول أخطاء وقاعدة ثقة.</div>
+  <aside class="notes"><p>مثال قاعدة مقبولة: «نستخدم موسم في الأسابيع العادية؛ في أسابيع العطلات نخطط بخط العطلة نفسها في العام الماضي حتى يغلبه موسم على موسم كامل؛ ونطلب من المورِّد تقويمًا هجريًا». القاعدة لها مالك: مازن الشعيل يراجع خطة السائقين قبل كل موسم.</p></aside>
+</section>
+
+<section class="slide" id="check-trust-rule" data-lo="LO3">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي قاعدة ثقة تكتب؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3">
+    <p class="lead">التنبؤ يغلب «الأسبوع الماضي» في الأيام العادية، ويخسر أمام «العام الماضي» في العطلات. أي قاعدة تكتبها لتخطيط السائقين؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يحكم بالمتوسط العام: يُخفي الأيام التي يكون فيها الخطأ أغلى">نستخدم التنبؤ دائمًا، فمتوسط خطئه أقل</div>
+      <div class="opt" data-ok>التنبؤ في الأيام العادية، و«العام الماضي» في العطلات حتى يثبت غيره</div>
+      <div class="opt" data-why="يرفض أداة تفوقت حيث اختُبرت: الخسارة في فترة لا تلغي الفوز في أخرى">نترك التنبؤ ونخطط كل الأيام بـ «العام الماضي»</div>
+      <div class="opt" data-why="يظن أن متوسط طريقتين أضمن: يجمع خطأ الأولى في العطلات مع خطأ الثانية في الأيام العادية">نأخذ متوسط التنبؤ والخطين كل يوم</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> قاعدة الثقة تتبع الدليل في كل فترة، وتبقي الباب مفتوحًا: حين يغلب التنبؤ الخط في عطلة سابقة، تتغير القاعدة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ب. إن اختار أحد «د» فلا ترفضها بسرعة: المتوسط أحيانًا ينفع، لكن الدليل هنا لا يدعمه، ولم نختبره.</p></aside>
 </section>
 
 <section class="slide lab" id="lab-1-2" data-auto="lab" data-lab="1.2">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>المساعد بدور المعلّم: يشرح معادلة، ولا يملأ الجدول. الصف 372 أول يوم فيه تنبؤ. راقب من يحسب متوسطًا واحدًا للأسابيع الاثني عشر: أعده إلى عمود period. من يعمل في Orange أو KNIME يستخدم trips_daily.csv. لا يحتاج المختبر شيئًا من المختبر 1.1.</p></aside>
 </section>
 
 <section class="slide" id="wrap-up">
   <div class="kicker">خلاصة اليوم 1</div>
   <h2>ثلاثة أمور تبقى معك</h2>
   <div class="cols cols-3">
-    <div class="card c-teal"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
-    <div class="card c-coral"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
-    <div class="card c-purple"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
+    <div class="card c-teal"><h4>القواعد قبل الكيلومترات</h4><p class="small mb0">أداة الحل صادقة بالقواعد التي أُعطيت لها. قارن الخطتين بالقواعد نفسها.</p></div>
+    <div class="card c-coral"><h4>الخط الساذج أولًا</h4><p class="small mb0">تنبؤ لا يغلب «الأسبوع الماضي» أو «العام الماضي» في الفترة التي تهمك لا يستحق ثمنه فيها.</p></div>
+    <div class="card c-purple"><h4>الفترة جزء من الرقم</h4><p class="small mb0">خطأ بلا أيامه نصف رقم. والعطل الهجرية تتحرك.</p></div>
   </div>
+  <aside class="notes"><p>اطلب من كل مشارك جملة واحدة: ما الذي سيسأله غدًا لمورِّد يعرض عليه أداة؟ اكتب ثلاثًا منها على اللوح.</p></aside>
 </section>
 
 <section class="slide dark" id="next" data-label="التالي">
   <div class="kicker">التالي</div>
-  <h2>اليوم 2: REPLACE: موضوع هذه الوحدة في كلمات قليلة</h2>
-  <p class="lead">REPLACE: ما يجهزه المشاركون قبل ذلك، والمختبرات غير المكتملة يمكن إكمالها في المنزل</p>
-  <aside class="notes">REPLACE: الحسابات أو التثبيتات أو القراءة التي يحتاجها المشاركون قبل الوحدة التالية</aside>
+  <h2>اليوم 2: السلامة بأرقام صادقة، والأتمتة بكلمات دقيقة</h2>
+  <p class="lead">أحضر خريطتك بسطرَي اليوم. من لم يكمل المختبر يكتب سطره من بطاقة الحالة في use_cases_14.txt.</p>
+  <aside class="notes"><p>لا قراءة مطلوبة الليلة. من لم يسلّم بطاقة القرار التحضيرية يسلّمها صباحًا. تذكير: المختبر 2.2 دون ذكاء اصطناعي في خطواته الأربع الأولى.</p></aside>
 </section>

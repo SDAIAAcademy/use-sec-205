@@ -187,7 +187,7 @@ def read_plan(path):
 
 def write_plan(path, plan):
     with open(path, "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")
         w.writerow(["van", "seq", "stop"])
         for van, route in plan.items():
             for k, sid in enumerate(route, 1):
