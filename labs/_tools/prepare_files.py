@@ -100,9 +100,9 @@ def forecast():
     rows = gen_forecast.table()
     fields = ["date", "weekday", "trips", "mawsim_forecast", "period", "holiday"]
     write_csv(d / "trips_daily.csv", rows, fields)
-    header = fields + ["lag7", "lag364", "err_mawsim", "err_lag7", "err_lag364"]
+    header = fields + ["lag7", "lag364", "err_mawsim", "err_lag7", "err_lag364", "abs_mawsim", "abs_lag7", "abs_lag364"]
     xlsx(d / "trips_daily.xlsx", [
-        ("الرحلات", header, [[r[k] for k in fields] + [None] * 5 for r in rows], [7, 8, 9, 10, 11], [12, 10, 9, 14, 8, 16, 9, 9, 11, 11, 11]),
+        ("الرحلات", header, [[r[k] for k in fields] + [None] * 8 for r in rows], [7, 8, 9, 10, 11, 12, 13, 14], [12, 10, 9, 14, 8, 16, 9, 9, 11, 11, 11, 11, 11, 11]),
         ("جدول الأخطاء", ["الطريقة", "MAE عادية", "MAPE عادية", "MAE عطلات", "MAPE عطلات"],
          [["موسم", None, None, None, None], ["الأسبوع الماضي (lag7)", None, None, None, None], ["العام الماضي (lag364)", None, None, None, None]],
          [2, 3, 4, 5], [24, 12, 12, 12, 12]),
